@@ -7,7 +7,7 @@
 ## Usage
 _(This will be updated during the project)_
 
-First, create a file name access-token.js under **_src/crawler/_**. Copy the text below into the file, and remember to replace **_xxx_** by your own access token.
+First, **_src/crawler/access-token.js_** and replace **_xxx_** in line 1 by _your own access token_. 
 ```javascript
 const access_token = "xxx";
 
