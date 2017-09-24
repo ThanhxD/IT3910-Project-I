@@ -3,16 +3,16 @@ const fs = require('fs'),
       path = require('path');
 const access_token = require('./access-token');
 
-//=================================== Utils ===================================
-function Utils() {}
-function ensureDirectoryExistence(filePath) {
+function _ensureFilePath(filePath) {
   var dirname = path.dirname(filePath);
   if (fs.existsSync(dirname)) {
     return true;
   }
-  ensureDirectoryExistence(dirname);
+  _ensureFilePath(dirname);
   fs.mkdirSync(dirname);
 }
+//=================================== Utils ===================================
+function Utils() {}
 
 Utils.prototype = {
     constructor: Utils,
@@ -22,8 +22,9 @@ Utils.prototype = {
      * @param {String} file - file name
      */
     saveToFile: function(data, file) {
-        let filePath = __dirname + `/data/raw/${file}`;
-        fs.writeFile(filePath, JSON.stringify(data, null, 2), {flag: 'w+'}, (err) => {
+        let filePath = __dirname + `/../../database/data/raw/${file}`;
+        _ensureFilePath(filePath);
+        fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
             if (err) {
                 throw err;
             }

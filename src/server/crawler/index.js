@@ -62,7 +62,7 @@ function crawlFbGroup(groupId) {
                         
                         // extract comments of comment
                         commentData.forEach(comment => {
-                            if (comment.comment_count > 0) {
+                            if (comment.comments && comment.comments.data) {
                                 comment.comments = comment.comments.data;
                             }
                         })
