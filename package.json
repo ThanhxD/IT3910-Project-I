@@ -1,0 +1,22 @@
+{
+  "name": "it3910-project-i",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "crawl": "node src/server/crawler/index.js",
+    "build": "",
+    "run": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThanhxD/IT3910-Project-I.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThanhxD/IT3910-Project-I/issues"
+  },
+  "homepage": "https://github.com/ThanhxD/IT3910-Project-I#readme"
+}
