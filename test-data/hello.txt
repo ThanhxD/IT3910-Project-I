@@ -1,0 +1,1740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="http://www.phuot.vn" />
+<base href="http://www.phuot.vn/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin 4.1.11" />
+
+	<link rel="Shortcut Icon" href="http://i3.photobucket.com/albums/y60/cvn/Phuot%20Favicon/logo_P3-1.png" type="image/x-icon" />
+
+
+
+
+
+
+
+
+	
+		<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js&amp;2.9.0/build/connection/connection-min.js"></script>
+	
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=4111"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=4111"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'http://yui.yahooapis.com/2.9.0/build';
+		var yuicombopath = 'http://yui.yahooapis.com/combo';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/connection/connection-min.js"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=6563520542ab4b7048f79647c39b7571&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "phuot_images/misc";
+	var IMGDIR_BUTTON = "phuot_images/buttons";
+	var vb_disable_ajax = parseInt("1", 10);
+	var SIMPLEVERSION = "4111";
+	var BBURL = "http://www.phuot.vn";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+	var AJAXBASEURL = "http://www.phuot.vn/";
+// -->
+</script>
+<script type="text/javascript" src="http://www.phuot.vn/clientscript/vbulletin-core.js?v=4111"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="Phuot.vn - The Real Phuot RSS Feed" href="http://www.phuot.vn/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="Phuot.vn - The Real Phuot - Tour - RSS Feed" href="http://www.phuot.vn/external.php?type=RSS2&amp;forumids=79" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/main-rollup.css?d=1497081515" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/popupmenu-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/vbulletin-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/vbulletin-chrome-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/vbulletin-formcontrols-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/editor-ie.css?d=1497081515" />
+	<![endif]-->
+
+
+<!-- Google Analysis -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1585701-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="http://phuot.vn/favicon32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://phuot.vn/favicon192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="http://phuot.vn/favicon96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://phuot.vn/favicon16.png" sizes="16x16" />
+
+	<meta name="keywords" content="[Toàn quốc], giang, khách, tại, đoàn, quan, sau, trưa, nam, shangri, cảnh, sáng, với, tối, của, những, một, núi, cao, hành, thăm, nghỉ, thành, tour, nhất, thể, nơi, ninh, được, đây, công, trình, đêm, phòng, nước, sạn, tục, phố, đến, lịch, nhà, khởi, long, khi, ngày, nhận, đẹp, bữa, văn, như" />
+	<meta name="description" content="(Tptravel.com.vn)- Shangri La mỗi mùa đẹp một vẻ riêng nhưng phù hợp nhất với khách du lịch có thể nói là mùa hè và mùa thu, đẹp nhất vào khoảng tháng 10, 11. Thời điểm này, nhiệt độ ban ngày cao nhất khoảng 19 độ C, tương đối mát mẻ và thuận lợi cho hành trình khám phá vô vàn những điều tuyệt vời ở thung lũng đã từng bị quên lãng. Xem thêm: Du lịch shangri la mùa nào đẹp nhất.  
+" />
+
+	<title>[Toàn quốc] Tour khám phá shangri la tại Tiên Phong Travel</title>
+	<link rel="canonical" href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/showthread-rollup.css?d=1497081515" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/toolsmenu-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/postlist-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/showthread-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/postbit-ie.css?d=1497081515" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/poll-ie.css?d=1497081515" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00008l/additional.css?d=1497081515" />
+
+</head>
+
+<body>
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+<div id="header" class="floatcontainer doc_header">
+	<div><a name="top" href="forum.php?s=6563520542ab4b7048f79647c39b7571" class="logo-image" alt="Phuot.vn - The Real Phuot"><span style="background: url(phuot_images/bannerDongVan.png) no-repeat; width:446px; height:174px; display:block"></span></a></div>
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=6563520542ab4b7048f79647c39b7571" rel="nofollow">&#272;&#259;ng ký</a></li>
+			
+				<li><a rel="help" href="faq.php?s=6563520542ab4b7048f79647c39b7571">Help</a></li>
+				<li>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=4111"></script>
+			<form id="navbar_loginform" action="login.php?s=6563520542ab4b7048f79647c39b7571&amp;do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+					<div>
+						<div>
+					<input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="Tên thành viên" />
+					<input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="M&#7853;t kh&#7849;u" style="display:none;" />
+					<input type="submit" class="loginbutton" tabindex="104" value="&#272;&#259;ng nh&#7853;p" title="Nhập nick và mật khẩu vào ô trống để đăng nhập, hoặc click chuột vào "Đăng ký" để tự tạo một nick mới." accesskey="s" />
+						</div>
+					</div>
+				</fieldset>
+				<div id="remember" class="remember">
+					<label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" /> Nh&#7899;?</label>
+				</div>
+
+				<input type="hidden" name="s" value="6563520542ab4b7048f79647c39b7571" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'Tên thành viên')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='Tên thành viên';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+				</li>
+				
+			</ul>
+		
+	</div>
+	<div class="ad_global_header">
+		
+		<div id="ad_global_header2"><table width="100%" height="174" align="right" border="0">
+  <tr>
+    <td width="520" align="right" valign="middle">
+
+<!--/* Revive Adserver Javascript Tag v3.0.2 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://ads.phuot.vn/adserver/www/delivery/...'
+  * to
+  *   'https://ads.phuot.vn/adserver/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.phuot.vn/adserver/www/delivery/ajs.php':'http://ads.phuot.vn/adserver/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=6");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.phuot.vn/adserver/www/delivery/ck.php?n=a235bfe6&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.phuot.vn/adserver/www/delivery/avw.php?zoneid=6&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a235bfe6' border='0' alt='' /></a></noscript>
+
+</td>
+  </tr>
+</table></div>
+	</div>
+	<hr />
+</div>
+<div id="navbar" class="navbar">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+	<li>
+	
+		<a class="navtab" href="content.php?s=6563520542ab4b7048f79647c39b7571">TRANG CHỦ</a>
+	
+	</li>
+
+		
+			<li class="selected"><a class="navtab" href="forum.php?s=6563520542ab4b7048f79647c39b7571">DIỄN ĐÀN</a>
+				<ul class="floatcontainer">
+					
+					
+					
+						
+						<li><a href="search.php?s=6563520542ab4b7048f79647c39b7571&amp;do=getdaily&amp;contenttype=vBForum_Post">Bài trong ngày</a></li>
+						
+					
+					
+					
+					
+					<li><a rel="help" href="faq.php?s=6563520542ab4b7048f79647c39b7571" accesskey="5">FAQ</a></li>
+					
+					
+						<li><a href="calendar.php?s=6563520542ab4b7048f79647c39b7571">L&#7883;ch</a></li>
+					
+					
+					
+					<li class="popupmenu">
+						<a href="javascript://" class="popupctrl" accesskey="6">Cộng đồng</a>
+						<ul class="popupbody popuphover">
+							
+							
+								<li><a href="group.php?s=6563520542ab4b7048f79647c39b7571">Groups</a></li>
+							
+							
+								<li><a href="album.php?s=6563520542ab4b7048f79647c39b7571">Album cá nhân</a></li>
+							
+							
+							
+								<li><a href="memberlist.php?s=6563520542ab4b7048f79647c39b7571">Danh sách thành viên</a></li>
+							
+							<li><a href="thanks.php?s=6563520542ab4b7048f79647c39b7571&amp;do=statistics">Thanks / Like Statistics</a></li>
+						</ul>
+					</li>
+					
+					
+					
+					<li class="popupmenu">
+						<a href="javascript://" class="popupctrl">Thao tác Forum</a>
+						<ul class="popupbody popuphover">
+							
+							<li>
+								<a href="forumdisplay.php?s=6563520542ab4b7048f79647c39b7571&amp;do=markread&amp;markreadhash=guest">&#272;ánh d&#7845;u box &#273;ã &#273;&#7885;c xong</a>
+							</li>
+							
+							
+						</ul>
+					</li>
+					
+					<li class="popupmenu">
+						<a href="javascript://" class="popupctrl" accesskey="3">Liên k&#7871;t nhanh</a>
+						<ul class="popupbody popuphover">
+							
+							
+							
+							
+							<li><a href="showgroups.php?s=6563520542ab4b7048f79647c39b7571" rel="nofollow">
+								
+									View Site Leaders
+								
+							</a></li>
+							
+							
+							
+							
+						</ul>
+					</li>
+					
+				</ul>
+			</li>
+		
+		
+	<li><a class="navtab" href="blog.php?s=6563520542ab4b7048f79647c39b7571">BLOG</a></li>
+
+<li><a class="navtab" href="album.php" target="_self">ALBUM</a></li>
+
+
+<li><a class="navtab" href="misc.php/?do=page&template=phuotca" target="_self">PHƯỢT CA</a></li>
+
+
+		
+			<li style="display:none"><a class="navtab" href="search.php?s=6563520542ab4b7048f79647c39b7571&amp;do=getdaily&amp;contenttype=vBForum_Post" accesskey="2">CÓ GÌ MỚI?</a></li>
+		
+		
+	</ul>
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=6563520542ab4b7048f79647c39b7571&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<span class="textboxcontainer"><span><input type="text" value="" name="query" class="textbox" tabindex="99"/></span></span>
+				<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="phuot_images/buttons/search.png" name="submit" onclick="document.getElementById('navbar_search').submit;" tabindex="100"/></span></span>
+			</form>
+			<ul class="navbar_advanced_search">
+				<li><a href="search.php?s=6563520542ab4b7048f79647c39b7571" accesskey="4">Advanced Search</a></li>
+				
+			</ul>
+		</div>
+	
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=6563520542ab4b7048f79647c39b7571" accesskey="1"><img src="phuot_images/misc/navbit-home.png" alt="Home" /></a></li>
+		
+	<li class="navbit"><a href="forum.php?s=6563520542ab4b7048f79647c39b7571">DIỄN ĐÀN</a></li>
+
+	<li class="navbit"><a href="forums/111-MUA-MUA-BÁN-BÁN?s=6563520542ab4b7048f79647c39b7571">MUA MUA BÁN BÁN</a></li>
+
+	<li class="navbit"><a href="forums/79-Tour?s=6563520542ab4b7048f79647c39b7571">Tour</a></li>
+
+		
+	<li class="navbit lastnavbit"><span>[Toàn quốc] Tour khám phá shangri la tại Tiên Phong Travel</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+
+<div id="ad_global_below_navbar"><table cellpadding="6" cellspacing="1" border="0" width="99%" align="center">
+
+<tr width="100%">
+  <td colspan="3">
+  <div align="center">
+  <!--/* Revive Adserver Javascript Tag v3.0.2 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://ads.phuot.vn/adserver/www/delivery/...'
+  * to
+  *   'https://ads.phuot.vn/adserver/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.phuot.vn/adserver/www/delivery/ajs.php':'http://ads.phuot.vn/adserver/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=3");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.phuot.vn/adserver/www/delivery/ck.php?n=a1f1e894&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.phuot.vn/adserver/www/delivery/avw.php?zoneid=3&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a1f1e894' border='0' alt='' /></a></noscript>
+
+
+</div>
+</td>
+</tr>
+
+<tr width="100%">
+<td colspan="3">
+<div align="center">
+  <p>
+<br>
+<font size="3" color="darkblue"><strong>RỦ BẠN: <a href="/threads/340406">Mừng Phượt lên 11, Về thăm Phú Yên, xứ Nẫu thương thương</a><br>
+    </strong></font>
+
+</p>
+</div></td>
+</tr>
+
+
+<tr width="100%">
+<td colspan="3">
+<div align="center">
+  <p>
+<br>
+<font size="3" color="darkblue"><strong>HOT HOT HOT:<a href="/threads/340638">Đặt ÁO PHƯỢT 2017 ngay và luôn các bạn ơi! </a><br>
+    </strong></font>
+
+</p>
+</div></td>
+</tr>
+
+<tr width="100%">
+<td colspan="3">
+<div align="center">
+  <p>
+<br>
+
+<font size="3" color="darkblue"><strong>THAM KHẢO: <a href="/threads/10990-Tham-kh%E1%BA%A3o-Quy-%C4%90%E1%BB%8Bnh-cho-c%C3%A1c-chuy%E1%BA%BFn-%C4%91i-%C4%91%C6%B0%E1%BB%9Dng-tr%C6%B0%E1%BB%9Dng-b%E1%BA%B1ng-xe-m%C3%A1y?p=250596#post250596">Quy định cho các chuyến đi đường trường bằng xe máy</a><br>
+    </strong></font>
+
+
+</p>
+</div></td>
+</tr>
+<br><br><br>
+
+
+<tr width="100%">
+<td colspan="3">
+<div align="center"><strong><font color="green"><br>Gõ từ khóa bạn muốn tìm rồi Enter, câu hỏi của bạn có thể đã từng được trả lời trên diễn đàn</font></strong>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('search', '1');
+  google.setOnLoadCallback(function() {
+    google.search.CustomSearchControl.attachAutoCompletion(
+      '014673957999915843507:psxld3mw1e0',
+      document.getElementById('q'),
+      'cse-search-box');
+  });
+</script>
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="014673957999915843507:psxld3mw1e0" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" id="q" autocomplete="off" size="31" />
+    <input type="submit" name="sa" value="Hỏi Phượt" />
+  </div>
+</form>
+<script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+
+</td>
+</tr>
+
+
+</table>
+<br><br></div>
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=6563520542ab4b7048f79647c39b7571&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_2">
+	
+	Bạn cần <a href="register.php?s=6563520542ab4b7048f79647c39b7571&amp;" target="_blank"><b>đăng ký</b></a> để có thể gửi bài lên diễn đàn.
+</li>
+		</ol>
+	</form>
+
+<script type="text/javascript" src="http://www.phuot.vn/dbtech/thanks/clientscript/thanks.js?v=117"></script>
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				Results 1 to 1 of 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			Topic: <span class="threadtitle"><a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571" title="Reload this Page">Tour khám phá shangri la tại Tiên Phong Travel</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=169785169708266&amp;xfbml=1"></script>
+
+<fb:like href="http://www.phuot.vn/threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">Công c&#7909; topic</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=6563520542ab4b7048f79647c39b7571&amp;t=348821&amp;pp=10&amp;page=1" accesskey="3" rel="nofollow">Show Printable Version</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=6563520542ab4b7048f79647c39b7571&amp;do=addsubscription&amp;t=348821" rel="nofollow">Theo dõi topic này&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+
+			
+
+			
+				<li class="popupmenu" id="displaymodes">
+					<h6><a class="popupctrl" href="javascript://">Display</a></h6>
+					<ul class="popupbody popuphover">
+						<li><label>Linear Mode</label></li>
+						<li><a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571&amp;mode=hybrid"> Switch to Hybrid Mode</a></li>
+						<li><a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571&amp;p=1597927&amp;mode=threaded#post1597927"> Switch to Threaded Mode</a></li>
+					</ul>
+				</li>
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_1597927">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">12-10-2017,&nbsp;<span class="time">11:29</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post1597927" href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571&amp;p=1597927#post1597927" class="postcounter">#1</a><a id="postcount1597927" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="members/239220-Dungxinhgai?s=6563520542ab4b7048f79647c39b7571" title="Dungxinhgai is offline"><strong><span style="color: blue;">Dungxinhgai</span></strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="members/239220-Dungxinhgai?s=6563520542ab4b7048f79647c39b7571" class="siteicon_profile">
+				Xem h&#7891; s&#417;
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=6563520542ab4b7048f79647c39b7571&amp;do=finduser&amp;userid=239220&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				View Forum Posts
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="private.php?s=6563520542ab4b7048f79647c39b7571&amp;do=newpm&amp;u=239220" class="siteicon_message" rel="nofollow">
+				Tin nhắn
+			</a>
+		</li>
+		
+		
+		
+		<li class="right">
+			<a href="blog.php?s=6563520542ab4b7048f79647c39b7571&amp;u=239220" class="siteicon_blog" rel="nofollow">
+				View Blog Entries
+			</a>
+		</li>
+		
+		
+		
+		<li class="left">
+			<a href="https://dulichtptravel.blogspot.com/" class="siteicon_homepage">
+				Visit Homepage
+			</a>
+		</li>
+		
+		
+		
+		<li class="right">
+			<a href="http://www.phuot.vn/list/author/239220-Dungxinhgai?s=6563520542ab4b7048f79647c39b7571" class="siteicon_article" rel="nofollow">
+				View Articles
+			</a>
+		</li>
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="phuot_images/statusicon/user-offline.png" alt="Dungxinhgai is offline" border="0" />
+
+					
+					<span class="usertitle">
+						Ph&#432;&#7907;t t&#7917;
+					</span>
+					
+
+                                        
+					
+						<span class="postbit_reputation" id="repdisplay_1597927_239220" title="Dungxinhgai is an unknown quantity at this point">
+							
+								<img class="repimg" src="phuot_images/reputation/reputation_pos.png" alt="" />
+							
+						</span>
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>Ngày tham gia</dt> <dd>11-10-2017</dd>
+						
+						
+						<dt>Bài</dt> <dd>1</dd>	
+						<dd class="collapse" style="font-weight:bold; clear:both;">Post Thanks / Like <a class="collapse" id="collapse_c_thanks_post1597927" href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel#top" style="position:relative; top:0px; right:0px; float:none;" ><img src="phuot_images/buttons/collapse_40b.png" alt="" /></a></dd>
+<dd>
+<dl id="c_thanks_post1597927" style="display:none;">
+    <dt>Thanks (Given)</dt>
+    <dd>0</dd>    <dt>Thanks (Received)</dt>
+    <dd>0</dd>    <dt>Likes (Given)</dt>
+    <dd>0</dd>    <dt>Likes (Received)</dt>
+    <dd>0</dd>    <dt>Dislikes (Given)</dt>
+    <dd>0</dd>    <dt>Dislikes (Received)</dt>
+    <dd>0</dd>
+</dl>
+</dd>
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Mặc định" /> Tour khám phá shangri la tại Tiên Phong Travel
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_1597927">
+				<blockquote class="postcontent restore">
+					<b>(Tptravel.com.vn)</b>- Shangri La mỗi mùa đẹp một vẻ riêng nhưng phù hợp nhất với khách du lịch có thể nói là mùa hè và mùa thu, đẹp nhất vào khoảng tháng 10, 11. Thời điểm này, nhiệt độ ban ngày cao nhất khoảng 19 độ C, tương đối mát mẻ và thuận lợi cho hành trình khám phá vô vàn những điều tuyệt vời ở thung lũng đã từng bị quên lãng. Xem thêm: <a href="http://tptravel.com.vn/tin-tuc/di-shangri-la-mua-nao-dep-nhat-106.html" target="_blank"><b>Du lịch shangri la mùa nào đẹp nhất</b></a>. <br />
+<br />
+<img src="https://lh3.googleusercontent.com/iiDO7IK_xT7E5wTH_nAqhltpPNBTXaoWLHg_pdVBHDKO_p1ccyUL-CoZrEBljqfQvFCJFbgd0qWRNv48LCjKi0qk585jhwYIkaXRXOn22eaLIhtersD-5kOCzT3gIMcpbkF8W2Lf" border="0" alt="" /><br />
+<br />
+<b>Du Lịch Shangri La:</b><br />
+Shangri-La nằm trong một cao nguyên cao hơn 3.300m so với mực nước biển, bao quanh bởi những ngọn đồi xanh tươi tốt, hồ nước tuyệt đẹp, không khí trong lành. Đây là nơi sinh sống chủ yếu của một bộ phận không nhỏ những người Tây Tạng, nơi tọa lạc của rất nhiều danh thắng, đền chùa, tu viện Phật giáo… Shangri-La còn nổi tiếng với công viên quốc gia Pudacuo. Đây là khu vực rộng khoảng 1.300km2 và là công viên quốc gia đầu tiên ở Trung Quốc.<br />
+<br />
+<b>Du lịch Shangri La - Lệ Giang: Hành trình chi tiết</b><br />
+<b>TOUR SHANGRI LA (NGÀY 1): HÀ NỘI - HỮU NGHỊ QUAN - NAM NINH (Ăn trưa – tối)   </b>                                                             <br />
+06h00: Xe và HDV đón quý khách tại Nhà Hát Lớn khởi hành đi Hữu Nghị Quan. Qúy khách ăn sáng tại Thị Trấn Mẹt (Chi phí tự túc), sau bữa sáng tiếp tục hành trình. Đến cửa khẩu, đoàn làm thủ tục xuất cảnh sang Trung Quốc. Xe và HDV địa phương đón Quý khách lên xe về ăn trưa tại Bằng Tường (cách cửa khẩu 18 km). Sau bữa trưa, xe khởi hành đi Nam Ninh bằng đường cao tốc mới “Trung Quốc - Asean”. Đến Nam Ninh, đoàn ăn tối, sau đó về khách sạn nhận phòng nghỉ ngơi, tự do dạo chơi, mua sắm ở phố đi bộ và Nghỉ đêm tại khách sạn.<br />
+<br />
+<b>TOUR SHANGRI LA (NGÀY 2): NAM NINH -  LỆ GIANG (Ăn sáng ��� trưa – tối) </b>                                                                            <br />
+Sau bữa sáng tại khách sạn, trả phòng ra sân bay Nam Ninh đáp chuyến bay JD5750 lúc 9h10 đi Lệ Giang. 11h05: Đến Lệ Giang, xe và HDV đón đoàn đi ăn trưa, nhận phòng khách sạn nghỉ ngơi.<br />
+<br />
+Chiều: Xe và HDV đưa đoàn đi thăm quan cảnh đẹp Lệ Giang với:<br />
+<br />
+Công Viên Hắc Long Đàm - nơi Dòng nước từ núi tuyết Ngọc Long đổ về nuôi sống vùng đất Lệ Giang. Từ công viên Hắc Long có thể ngắm sự hùng vĩ của núi tuyết ngàn năm, trong khung cảnh thanh bình của nước hồ phẳng lặng..<br />
+<br />
+<br />
+Du lịch Lệ Giang - Công viên Hắc Long Đàm<br />
+<br />
+Mộc Phủ, Vạn Cổ Lầu - Một công trình được coi là tiêu biểu cho lịch sử và văn hóa nơi đây. Mộc Phủ được ví như Tử Cấm thành của phương nam. Trước cổng, dòng nước chảy từ hướng bắc xuống được bắc ngang bởi cây cầu đá rộng không có thành. Đối diện bình phong ngoài là tòa cổng chào bằng đá. Xưa kia tòa cổng chào này là công trình kỳ vĩ nhất đất Lệ Giang, làm bằng đá ngọc trắng (Thăm quan bên ngoài)<br />
+<br />
+Sau khi ăn tối, đoàn tự do thăm quan phố cổ Lệ Giang ban đêm. Quý khách có thể mua hàng lưu niệm đặc thù như: tranh gỗ, đồ đồng, đồ bạc chạm khảm rất tinh xảo và Nghỉ đêm tại Lệ Giang.<br />
+<br />
+<b>TOUR SHANGRI LA (NGÀY 3): LỆ GIANG - KHE HỒ NHẢY – SHANGRILA (Ăn sáng – trưa – tối)       </b>                                        <br />
+Sau bữa sáng tại khách sạn, trả phòng lên xe khởi hành đi ShangriLa dọc theo sông Trường Giang - Kim sa, thăm quan Vòng cung Omega corner – nơi sông Kim Sa chảy đến đây thì uốn vòng quanh một quả núi tròn tạo thành chữ Ω cân đối như thể nhân tạo. Tiếp tục thăm quan Khe Hổ Khiêu - Hổ nhảy (Tiger Leaping George), thẳng cảnh thiên nhiên kỳ thú - là hẻm núi sâu, dài và hẹp nhất thế giới. Nơi đây dòng sông Trường Giang bị chặn bởi hai dãy núi cao Ngọc Long (5600m) và Habar (5396m), đột ngột thót nhỏ lại một đoạn dài 16km, chiều sâu tính từ đỉnh núi xuống đáy hẻm là gần 3900m. Đoàn chụp ảnh lưu niệm, sau đó tiếp tục khởi hành đi Shangrila, trên đường ngắm nhìn phong cảnh trên thảo nguyên thay đổi liên tục theo độ cao.<br />
+<br />
+Đến nơi, đoàn ăn trưa, nhận phòng nghỉ ngơi…Chiều đoàn khởi hành đi thăm Shangrila với:<br />
+<br />
+Đền Songzalin - Hình ảnh thu nhỏ của Cung điện Potala (Tây Tạng), nằm trên độ cao 3200m, nổi bật với những mái nhọn vàng rực rỡ, là một ngôi đền lớn nhất ở Vân Nam, nơi tập trung những nét văn hóa tiêu biểu của người Tạng, xây dựng từ năm 1679 bởi vị Lạt ma thứ 5, hiện vẫn được bảo tồn nguyên vẹn, có thể chứa tới 3000 người.<br />
+<br />
+Quý khách tự do mua sắm, sau khi ăn tối tại nhà hàng đoàn tự do dạo chơi khám phá hoặc có thể tham dự chương trình Nhạc vũ Tây Tạng hoành tráng ( vé tự túc) và Nghỉ đêm tại Shangrila.<br />
+<br />
+<b>TOUR SHANGRI LA (NGÀY 4): SHANGRILA (BỒNG LAI TIÊN CẢNH)  - LỆ GIANG (Ăn sáng – Trưa – Tối)    </b>                              <br />
+Quý khách dùng bữa sáng tại khách sạn, trả phòng, đoàn khởi hành đi tham quan:<br />
+<br />
+Rừng quốc gia Pudachuo với thắng cảnh hồ Bitahai - Bạch Thuỷ Hà hồ nước ngọt cao nhất ở Vân Nam (4200m), nước hồ trong suốt như thủy tinh, cùng với những phong cảnh núi non, đồng cỏ, đồi hoa, rừng thông thay đổi màu sắc theo mùa..<br />
+<br />
+Sau khi ăn trưa tại nhà hàng, đoàn khởi hành về Lệ Giang, trên đường tự do ngắm cảnh đẹp bên đường. Đến Lệ Giang, Qúy khách ăn trưa, sau đó về nhận phòng khách sạn nghỉ ngơi…<br />
+<br />
+Qúy khách dùng bữa tối, tự do ngắm sắc màu Lệ Giang về đêm, thưởng thức được âm nhạc và các điệu dân vũ. Phố cổ Lệ Giang còn có thể gọi là phố của âm nhạc dân tộc và dân vũ mà bạn chẳng cần tốn một xu tiền vé lại có thể trở thành diễn viên ngay nếu thích, khám phá văn hóa ẩm thực địa phương và Nghỉ đêm tại Lệ Giang<br />
+<br />
+<b>TOUR SHANGRI LA (NGÀY 5): NÚI TUYẾT NGỌC LONG - THÀNH CỔ LỆ GIANG (Ăn sáng – trưa – tối) </b>                                 <br />
+Sau khi ăn sáng, thăm quan một trong những thắng cảnh không thể bỏ qua của Lệ Giang:<br />
+<br />
+Núi Tuyết Ngọc Long - Quanh năm tuyết phủ, được so sánh với “Thụy Sĩ Á Đông” như rặng Pyrenes ( Ngọn núi nổi tiếng tại biên giới Pháp và Thụy Sỹ ).<br />
+<br />
+Đi cáp treo lên Vân Sơn Bình với độ cao 3200m và chụp ảnh lưu niệm. Đoàn tham quan thảo nguyên Cam Hải Tử, Sông Bạch Thuỷ Hà, Ngoc Thuỷ Trại, Thành cổ Lệ Giang – thành cổ được UNESCO cấp chứng nhận Di sản văn hoá thế giới năm 1997.<br />
+<br />
+Qúy khách ăn trưa tại nhà hàng với các món ăn địa phương, về khách sạn nghỉ ngơi..<br />
+<br />
+Chiều: HDV đưa Qúy khách tham quan một vòng Thành cổ Lệ Giang - Xây dựng cách đây hơn 800 năm, được Unessco công nhận là di sản văn hoá thế giới năm 1997- một di sản văn hóa thế giới với phong cảnh đẹp đẽ xứ nước, được mệnh danh là &quot;Venice của Phương Đông&quot;, nơi đây nhà nhà đều có suối chảy qua, những cây liễu buông xuống các bậc cửa và những cây cầu nhỏ xinh xắn. Sau khi dạo Phố Tứ Phương ở trung tâm thành cổ. Sau khi ăn tối, đoàn tự do thăm quan phố cổ Lệ Giang ban đêm hoặc mua vé xem Show diễn “ Ấn Tượng Lệ Giang “. Mua hàng lưu niệm đặc thù như: tranh gỗ, đồ đồng, đồ bạc chạm khảm rất tinh xảo và Nghỉ đêm tại Lệ Giang.<br />
+<br />
+<b>TOUR SHANGRI LA (NGÀY 6): LỆ GIANG - NAM NINH - HÀ NỘI (Ăn sáng, trưa, tối)</b>                                                                    <br />
+Đoàn trả phòng, xe và HDV đưa đoàn ra sân bay Lệ Giang làm thủ tục đáp chuyến bay JD5749 lúc 6h35 về Nam Ninh. 8h25: Đến Nam Ninh, đoàn ăn sáng sau đó thăm quan quanh thành phố. Dừng chân thăm quan mua sắm tại cửa hàng Trúc Than, TTTM tại Nam Ninh. Sau khi ăn trưa, xe đưa đoàn về cửa khẩu Hữu Nghị Quan trên con đường Cao Tốc Nam Hữu làm thủ tục nhập cảnh Việt Nam. 15h00 - 15h30:   Xe đưa Quý khách về Nhà Hát Lớn. Chia tay Qúy khách - Kết thúc chương trình.<br />
+<br />
+<b> Xem thêm: Giảm ngay 1.700.000 VNĐ tour Shangri La tháng 10 <a href="http://tptravel.com.vn/tour/du-lich-shangri-la-le-giang-dich-vu-tot-178.html" target="_blank">TẠI ĐÂY</a> <br />
+</b><br />
+<b>TƯ VẤN MIỄN PHÍ VÀ ĐẶT TOUR SHANGRI LA - LỆ GIANG<br />
+HOTLINE: 0912 316 223 (Mrs Hằng)</b><br />
+<br />
+Đừng quên <a href="https://www.facebook.com/tienphongtravel/" target="_blank"><b>follow Fanpage</b></a> của Tiên Phong Travel để nhận những thông tin du lịch hữu ích và không bỏ lỡ những chương trình khuyến mại hấp dẫn nhất.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+			
+			<!-- edit note -->
+			<blockquote class="postcontent lastedited">
+				
+					Last edited by Dungxinhgai; 12-10-2017 at <span class="time">11:30</span>.
+				
+				
+					<span class="reason">Lý do:</span> Sửa lại nội dung
+				
+			</blockquote>
+			<!-- / edit note -->
+			
+				
+			
+				 
+			
+			
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_1597927" src="phuot_images/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_1597927" class="newreply" href="newreply.php?s=6563520542ab4b7048f79647c39b7571&amp;do=newreply&amp;p=1597927" rel="nofollow" title="Trích dẫn"><img id="quoteimg_1597927" src="clear.gif" alt="Trích dẫn" />  Trích dẫn</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				
+<img class="inline" src="phuot_images/buttons/ip-40b.png" alt="IP" title="IP: 118.71.236.98" />
+ 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+
+<!-- START Phuot-ad -->
+<div style="clear: left">
+  <script type="text/javascript"><!--
+google_ad_client = "ca-pub-3541514460636898";
+/* Phuot-728x90-threadcontent */
+google_ad_slot = "4456535338";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<!-- END Phuot-ad -->
+
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">Chuyển nhanh đến</span>
+		<a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571" class="popupctrl"><span class="ctrlcontainer">Tour</span></a>
+		<a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel#top" class="textcontrol" onclick="document.location.hash='top';return false;">Top</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">Site Areas</li>
+		<li><a href="usercp.php?s=6563520542ab4b7048f79647c39b7571">Điều Khiển</a></li>
+		<li><a href="private.php?s=6563520542ab4b7048f79647c39b7571">Tin Nhắn</a></li>
+		<li><a href="subscription.php?s=6563520542ab4b7048f79647c39b7571">Subscriptions</a></li>
+		<li><a href="online.php?s=6563520542ab4b7048f79647c39b7571">Who's Online</a></li>
+		<li><a href="search.php?s=6563520542ab4b7048f79647c39b7571">Tìm ki&#7871;m box</a></li>
+		<li><a href="forum.php?s=6563520542ab4b7048f79647c39b7571">Forums Home</a></li>
+		
+			<li class="optionlabel">Forums</li>
+			
+		
+			
+				<li><a href="forums/103-KHU-VỰC-CHUNG?s=6563520542ab4b7048f79647c39b7571">KHU VỰC CHUNG</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/78-Nội-Quy-Diễn-Đàn?s=6563520542ab4b7048f79647c39b7571">Nội Quy Diễn Đàn</a></li>
+			
+		
+			
+				<li><a href="forums/30-Thông-báo-Hướng-dẫn?s=6563520542ab4b7048f79647c39b7571">Thông báo - Hướng dẫn</a></li>
+			
+		
+			
+				<li><a href="forums/115-Góp-ý-Hỏi-đáp-về-Phuot-vn?s=6563520542ab4b7048f79647c39b7571">Góp ý - Hỏi đáp về Phuot.vn</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/155-TIN-TỨC-SỰ-KIỆN?s=6563520542ab4b7048f79647c39b7571">TIN TỨC - SỰ KIỆN</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/200-Sinh-nhật-Phượt-2017?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2017</a></li>
+			
+		
+			
+				<li><a href="forums/156-Các-hoạt-động-chính-thức?s=6563520542ab4b7048f79647c39b7571">Các hoạt động chính thức</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/202-Chung-tay-cùng-Chương-trình-1000-Chăn-ấm-năm-2016?s=6563520542ab4b7048f79647c39b7571">Chung tay cùng Chương trình &quot;1000 Chăn ấm&quot; năm 2016</a></li>
+			
+		
+			
+				<li><a href="forums/199-Cuộc-thi-Chuyện-Phượt-Sống?s=6563520542ab4b7048f79647c39b7571">Cuộc thi &quot;Chuyện Phượt: Sống&quot;</a></li>
+			
+		
+			
+				<li><a href="forums/129-Quyên-góp-giúp-đỡ-miền-Trung-2016?s=6563520542ab4b7048f79647c39b7571">Quyên góp giúp đỡ miền Trung 2016</a></li>
+			
+		
+			
+				<li><a href="forums/196-Sinh-nhật-Phượt-2016?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2016</a></li>
+			
+		
+			
+				<li><a href="forums/190-Sinh-nhật-Phượt-2015-tháng-Bảy-Phượt-tụ-về-Đà-Nẵng?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2015 - tháng Bảy Phượt tụ về Đà Nẵng</a></li>
+			
+		
+			
+				<li><a href="forums/195-Lễ-hội-mùa-hè-2015-Đà-Lạt-những-con-đường-xanh?s=6563520542ab4b7048f79647c39b7571">Lễ hội mùa hè 2015 - Đà Lạt những con đường xanh</a></li>
+			
+		
+			
+				<li><a href="forums/192-Triển-lãm-ảnh-Tổ-quốc-tôi-Chào-mừng-Phượt-lên-Chín?s=6563520542ab4b7048f79647c39b7571">Triển lãm ảnh &quot;Tổ quốc tôi&quot; - Chào mừng Phượt lên Chín</a></li>
+			
+		
+			
+				<li><a href="forums/193-Photo-Tour-lần-3-tháng-5-2015-Chinh-phục-Lang-Biang?s=6563520542ab4b7048f79647c39b7571">Photo Tour lần 3, tháng 5/2015 - Chinh phục Lang Biang</a></li>
+			
+		
+			
+				<li><a href="forums/187-Cuộc-thi-Bứt-phá-Giới-hạn-Bản-thân?s=6563520542ab4b7048f79647c39b7571">Cuộc thi &quot;Bứt phá Giới hạn Bản thân&quot;</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forums/189-Các-bài-dự-thi-Bứt-phá-Cá-nhân?s=6563520542ab4b7048f79647c39b7571">Các bài dự thi &quot;Bứt phá Cá nhân&quot;</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/188-Chương-trình-V��-môi-trường-xanh-sạch-đẹp-tại-Vườn-quốc-gia-Ba-Vì?s=6563520542ab4b7048f79647c39b7571">Chương trình &quot;Vì môi trường xanh, sạch, đẹp tại Vườn quốc gia Ba Vì&quot;</a></li>
+			
+		
+			
+				<li><a href="forums/186-Photo-Tour-lần-2-tháng-5-2014-Theo-cánh-Hải-Âu?s=6563520542ab4b7048f79647c39b7571">Photo Tour lần 2, tháng 5/2014 - Theo cánh Hải Âu</a></li>
+			
+		
+			
+				<li><a href="forums/184-Sinh-nhật-Phượt-2014-Nha-Trang-3-miền-tụ-hội?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2014 - Nha Trang 3 miền tụ hội</a></li>
+			
+		
+			
+				<li><a href="forums/163-Sinh-nhật-Phượt-2013?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2013</a></li>
+			
+		
+			
+				<li><a href="forums/171-Cuộc-thi-viết-BỐN-MÙA-PHIÊU-DU-2013?s=6563520542ab4b7048f79647c39b7571">Cuộc thi viết &quot;BỐN MÙA PHIÊU DU&quot;, 2013</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forums/173-Các-bài-viết-dự-vòng-sơ-khảo?s=6563520542ab4b7048f79647c39b7571">Các bài viết dự vòng sơ khảo</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/168-Tuần-lễ-Phượt-vì-Môi-trường-2-9-6-2013?s=6563520542ab4b7048f79647c39b7571">Tuần lễ &quot;Phượt vì Môi trường&quot;, 2-9/6/2013</a></li>
+			
+		
+			
+				<li><a href="forums/165-Photo-Tour-5-2013-–-Theo-dấu-Người-Tình?s=6563520542ab4b7048f79647c39b7571">Photo Tour 5/2013 – Theo dấu Người Tình</a>
+					<ol class="d3">
+						
+		
+			
+				<li><a href="forums/169-Quy-chế-Đăng-ký-Hỏi-đáp?s=6563520542ab4b7048f79647c39b7571">Quy chế - Đăng ký - Hỏi đáp</a></li>
+			
+		
+			
+				<li><a href="forums/170-Ảnh-chụp-theo-Chủ-đề-hàng-ngày?s=6563520542ab4b7048f79647c39b7571">Ảnh chụp theo Chủ đề hàng ngày</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/146-Sinh-nhật-Phượt-2012?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2012</a></li>
+			
+		
+			
+				<li><a href="forums/153-Mênh-mông-nước-trời-Ba-Bể?s=6563520542ab4b7048f79647c39b7571">Mênh mông nước trời Ba Bể</a></li>
+			
+		
+			
+				<li><a href="forums/143-Triển-lãm-ảnh-Thương-nhớ-Đồng-Văn-2012?s=6563520542ab4b7048f79647c39b7571">Triển lãm ảnh &quot;Thương nhớ Đồng Văn&quot; 2012</a></li>
+			
+		
+			
+				<li><a href="forums/136-Sinh-nhật-Phượt-2011?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2011</a></li>
+			
+		
+			
+				<li><a href="forums/98-Sinh-nhật-Phượt-2010?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2010</a></li>
+			
+		
+			
+				<li><a href="forums/91-Sinh-nhật-Phượt-2009?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2009</a></li>
+			
+		
+			
+				<li><a href="forums/126-Sinh-nhật-Phượt-2008?s=6563520542ab4b7048f79647c39b7571">Sinh nhật Phượt 2008</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/157-Từ-thiện?s=6563520542ab4b7048f79647c39b7571">Từ thiện</a></li>
+			
+		
+			
+				<li><a href="forums/159-Quảng-cáo-Khuyến-mại?s=6563520542ab4b7048f79647c39b7571">Quảng cáo - Khuyến mại</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/43-VIỆT-NAM-QUÊ-HƯƠNG-TÔI?s=6563520542ab4b7048f79647c39b7571">VIỆT NAM QUÊ HƯƠNG TÔI</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/45-Thân-thương-miền-Bắc?s=6563520542ab4b7048f79647c39b7571">Thân thương miền Bắc</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/145-Hỏi-đáp-Thông-tin-du-lịch-miền-Bắc?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch miền Bắc</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/46-Sâu-nặng-miền-Trung-Nắng-gió-Tây-Nguyên?s=6563520542ab4b7048f79647c39b7571">Sâu nặng miền Trung - Nắng gió Tây Nguyên</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/154-Hỏi-đáp-Thông-tin-du-lịch-miền-Trung?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch miền Trung</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/47-Bao-la-miền-Nam?s=6563520542ab4b7048f79647c39b7571">Bao la miền Nam</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/147-Hỏi-đáp-Thông-tin-du-lịch-miền-Nam?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch miền Nam</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/113-Hồi-ức-về-các-chuyến-đi-trong-nước?s=6563520542ab4b7048f79647c39b7571">Hồi ức về các chuyến đi trong nước</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/51-THẾ-GIỚI-MUÔN-PHƯƠNG?s=6563520542ab4b7048f79647c39b7571">THẾ GIỚI MUÔN PHƯƠNG</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/53-Diệu-kỳ-Châu-Á?s=6563520542ab4b7048f79647c39b7571">Diệu kỳ Châu Á</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/141-Hỏi-đáp-Thông-tin-du-lịch-châu-Á?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch châu Á</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/52-Hoành-tráng-Châu-Âu?s=6563520542ab4b7048f79647c39b7571">Hoành tráng Châu Âu</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/144-Hỏi-đáp-Thông-tin-du-lịch-châu-Âu?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch châu Âu</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/55-Rộng-mở-Châu-Úc-Mỹ?s=6563520542ab4b7048f79647c39b7571">Rộng mở  Châu Úc, Mỹ</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/194-Hỏi-đáp-Thông-tin-du-lịch-châu-Úc-Mỹ?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin du lịch châu Úc, Mỹ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/54-Hoang-dã-Châu-Phi?s=6563520542ab4b7048f79647c39b7571">Hoang dã Châu Phi</a></li>
+			
+		
+			
+				<li><a href="forums/114-Hồi-ức-về-các-chuyến-đi-nước-ngoài?s=6563520542ab4b7048f79647c39b7571">Hồi ức về các chuyến đi nước ngoài</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/107-PHƯỢT-THEO-CHỦ-ĐỀ?s=6563520542ab4b7048f79647c39b7571">PHƯỢT THEO CHỦ ĐỀ</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/70-Đi-Chấm?s=6563520542ab4b7048f79647c39b7571">Đi Chấm</a></li>
+			
+		
+			
+				<li><a href="forums/142-Đạp-xe-Xe-đạp?s=6563520542ab4b7048f79647c39b7571">Đạp xe - Xe đạp</a></li>
+			
+		
+			
+				<li><a href="forums/48-Khám-phá?s=6563520542ab4b7048f79647c39b7571">Khám phá</a></li>
+			
+		
+			
+				<li><a href="forums/128-Xuyên-Việt?s=6563520542ab4b7048f79647c39b7571">Xuyên Việt</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/198-Hỏi-đáp-Thông-tin-Xuyên-Việt?s=6563520542ab4b7048f79647c39b7571">Hỏi đáp, Thông tin Xuyên Việt</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/108-CẨM-NANG-ĐỒ-NGHỀ-DỊCH-VỤ?s=6563520542ab4b7048f79647c39b7571">CẨM NANG - ĐỒ NGHỀ - DỊCH VỤ</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/117-Kỹ-năng-Sức-khỏe-và-An-toàn?s=6563520542ab4b7048f79647c39b7571">Kỹ năng, Sức khỏe và An toàn</a></li>
+			
+		
+			
+				<li><a href="forums/50-Đồ-nghề-đi-phượt?s=6563520542ab4b7048f79647c39b7571">Đồ nghề đi phượt</a></li>
+			
+		
+			
+				<li><a href="forums/130-GPS-Thiết-bị-bản-đồ-số-phần-mềm?s=6563520542ab4b7048f79647c39b7571">GPS - Thiết bị, bản đồ số, phần mềm...</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/135-Dự-án-bản-đồ-số-Việt-Nam?s=6563520542ab4b7048f79647c39b7571">Dự án bản đồ số Việt Nam</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/118-Ăn-uống-ngủ-nghỉ?s=6563520542ab4b7048f79647c39b7571">Ăn uống, ngủ nghỉ</a></li>
+			
+		
+			
+				<li><a href="forums/138-Ẩm-thực?s=6563520542ab4b7048f79647c39b7571">Ẩm thực</a></li>
+			
+		
+			
+				<li><a href="forums/119-Thông-tin-đường-sá-dịch-vụ-vận-chuyển?s=6563520542ab4b7048f79647c39b7571">Thông tin đường sá, dịch vụ vận chuyển</a></li>
+			
+		
+			
+				<li><a href="forums/120-Các-dịch-vụ-du-lịch-khác?s=6563520542ab4b7048f79647c39b7571">Các dịch vụ du lịch khác</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/109-PHƯỢT-NGHỆ?s=6563520542ab4b7048f79647c39b7571">PHƯỢT NGHỆ</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/60-Nói-chuyện-bằng-hình-ảnh?s=6563520542ab4b7048f79647c39b7571">Nói chuyện bằng hình ảnh</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/139-Kỹ-thuật-chụp-ảnh?s=6563520542ab4b7048f79647c39b7571">Kỹ thuật chụp ảnh</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/121-Văn-thơ-nhạc-họa?s=6563520542ab4b7048f79647c39b7571">Văn thơ nhạc họa...</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/162-TÌM-BẠN-ĐỒNG-HÀNH-TỔ-CHỨC-CHUYẾN-ĐI?s=6563520542ab4b7048f79647c39b7571">TÌM BẠN ĐỒNG HÀNH - TỔ CHỨC CHUYẾN ĐI</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/160-Tìm-bạn-đồng-hành-các-chuyến-đi-TRONG-NƯỚC?s=6563520542ab4b7048f79647c39b7571">Tìm bạn đồng hành các chuyến đi TRONG NƯỚC</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/177-Góc-của-Dỏm?s=6563520542ab4b7048f79647c39b7571">Góc của Dỏm</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/161-Tổ-chức-các-chuyến-đi-TRONG-NƯỚC?s=6563520542ab4b7048f79647c39b7571">Tổ chức các chuyến đi TRONG NƯỚC</a></li>
+			
+		
+			
+				<li><a href="forums/134-Tìm-bạn-đồng-hành-Tổ-chức-các-chuyến-đi-NƯỚC-NGOÀI?s=6563520542ab4b7048f79647c39b7571">Tìm bạn đồng hành &amp; Tổ chức các chuyến đi NƯỚC NGOÀI</a></li>
+			
+		
+			
+				<li><a href="forums/151-Bảng-đen?s=6563520542ab4b7048f79647c39b7571">Bảng đen</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/110-KẾT-NỐI-BẠN-BÈ?s=6563520542ab4b7048f79647c39b7571">KẾT NỐI BẠN BÈ</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/61-Nhóm-Phượt-theo-sở-thích?s=6563520542ab4b7048f79647c39b7571">Nhóm Phượt theo sở thích</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/99-Nhóm-PKM?s=6563520542ab4b7048f79647c39b7571">Nhóm PKM</a></li>
+			
+		
+			
+				<li><a href="forums/102-Nhóm-Gà-Đi-Bụi-VN?s=6563520542ab4b7048f79647c39b7571">Nhóm Gà Đi Bụi VN</a></li>
+			
+		
+			
+				<li><a href="forums/133-Nhóm-NC-Group?s=6563520542ab4b7048f79647c39b7571">Nhóm NC Group</a></li>
+			
+		
+			
+				<li><a href="forums/140-Phuot-Sai-Gon-FC?s=6563520542ab4b7048f79647c39b7571">Phuot Sai Gon FC</a></li>
+			
+		
+			
+				<li><a href="forums/174-F-12-Biệt-đội-nhí-nhố?s=6563520542ab4b7048f79647c39b7571">[F.12] Biệt đội nhí nhố</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/122-Hội-Phượt-theo-khu-vực?s=6563520542ab4b7048f79647c39b7571">Hội Phượt theo khu vực</a></li>
+			
+		
+			
+				<li><a href="forums/132-Gặp-gỡ-offline?s=6563520542ab4b7048f79647c39b7571">Gặp gỡ offline</a></li>
+			
+		
+			
+				<li><a href="forums/71-Café-du-Phượt?s=6563520542ab4b7048f79647c39b7571">Café du Phượt</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/123-Chúc-tụng?s=6563520542ab4b7048f79647c39b7571">Chúc tụng</a></li>
+			
+		
+			
+				<li><a href="forums/124-Bình-loạn?s=6563520542ab4b7048f79647c39b7571">Bình loạn</a></li>
+			
+		
+			
+				<li><a href="forums/81-Ấy-ở-đây?s=6563520542ab4b7048f79647c39b7571">Ấy ở đây</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/111-MUA-MUA-BÁN-BÁN?s=6563520542ab4b7048f79647c39b7571">MUA MUA BÁN BÁN</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forums/178-Trang-phục-đi-phượt?s=6563520542ab4b7048f79647c39b7571">Trang phục đi phượt</a></li>
+			
+		
+			
+				<li><a href="forums/179-Vật-dụng-Trang-bị-phượt?s=6563520542ab4b7048f79647c39b7571">Vật dụng, Trang bị phượt</a></li>
+			
+		
+			
+				<li><a href="forums/180-Máy-ảnh-Thiết-bị-điện-tử-cầm-tay-và-phụ-kiện?s=6563520542ab4b7048f79647c39b7571">Máy ảnh, Thiết bị điện tử cầm tay và phụ kiện</a></li>
+			
+		
+			
+				<li><a href="forums/181-Xe-2-bánh-phụ-tùng-và-đồ-chơi?s=6563520542ab4b7048f79647c39b7571">Xe 2 bánh, phụ tùng và đồ chơi</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="forums/182-Dịch-vụ-cho-thuê-xe-2-bánh?s=6563520542ab4b7048f79647c39b7571">Dịch vụ cho thuê xe 2 bánh</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forums/79-Tour?s=6563520542ab4b7048f79647c39b7571">Tour</a></li>
+			
+		
+			
+				<li><a href="forums/148-Dịch-vụ-du-lịch?s=6563520542ab4b7048f79647c39b7571">Dịch vụ du lịch</a></li>
+			
+		
+			
+				<li><a href="forums/125-Chợ-Dân-sinh?s=6563520542ab4b7048f79647c39b7571">Chợ Dân sinh</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			<strong>&laquo;</strong>
+			<a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571&amp;goto=nextoldest" rel="nofollow">Previous Thread</a>
+			|
+			<a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel?s=6563520542ab4b7048f79647c39b7571&amp;goto=nextnewest" rel="nofollow">Next Thread</a>
+			<strong>&raquo;</strong>
+		
+	</div>
+	<!-- / next / previous links -->
+
+
+
+<div id="thread_info" class="thread_info block">
+	
+	<h4 class="threadinfohead blockhead">Thread Information</h4>
+	<div id="thread_onlineusers" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			<h5>Users Browsing this Thread</h5>
+			<div>
+				<p>Đang có 1 người xem topic này (0 thành viên và 1 khách)</p>
+				<ol class="commalist">
+					
+				</ol>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	
+	
+	<div class="options_block_container">
+		
+		<div class="options_block2">
+			<h4 class="blockhead options_correct">Đính topic này lên trang mạng xã hội của bạn hoặc submit nó tới các dịch vụ bookmark</h4>
+			<div id="social_bookmarks_list" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				<h5 class="blocksubhead">Đính topic này lên trang mạng xã hội của bạn hoặc submit nó tới các dịch vụ bookmark</h5>
+				<ul class="icon_list"><li class="smallfont">
+	
+		<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark"><img src="phuot_images/misc/facebook_share_icon.gif" alt="Submit to Facebook" /></a>
+	
+	<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark">Facebook</a>
+</li><li class="smallfont">
+	
+		<a href="http://twitter.com/home/?status=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821" target="socialbookmark"><img src="phuot_images/misc/twitter.png" alt="Submit to Twitter" /></a>
+	
+	<a href="http://twitter.com/home/?status=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821" target="socialbookmark">Twitter</a>
+</li><li class="smallfont">
+	
+		<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark"><img src="phuot_images/misc/bookmarksite_digg.gif" alt="Submit to Digg" /></a>
+	
+	<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark">Digg</a>
+</li><li class="smallfont">
+	
+		<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark"><img src="phuot_images/misc/bookmarksite_google.gif" alt="Submit to Google" /></a>
+	
+	<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fwww.phuot.vn%2Fshowthread.php%3Ft%3D348821&amp;title=Tour+kh%C3%A1m+ph%C3%A1+shangri+la+t%E1%BA%A1i+Ti%C3%AAn+Phong+Travel" target="socialbookmark">Google</a>
+</li></ul>
+			</div>
+		</div>
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel#top"><img src="phuot_images/buttons/collapse_40b.png" alt="" /></a>
+				Posting Permissions
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li>You <strong>may not</strong> post new threads</li>
+		<li>You <strong>may not</strong> post replies</li>
+		<li>You <strong>may not</strong> post attachments</li>
+		<li>You <strong>may not</strong> edit your posts</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=6563520542ab4b7048f79647c39b7571&amp;do=bbcode" target="_blank">BB code</a> is <strong>B&#7853;t</strong></li>
+			<li><a href="misc.php?s=6563520542ab4b7048f79647c39b7571&amp;do=showsmilies" target="_blank">Smilies</a> are <strong>B&#7853;t</strong></li>
+			<li><a href="misc.php?s=6563520542ab4b7048f79647c39b7571&amp;do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>B&#7853;t</strong></li>
+			<li><a href="misc.php?s=6563520542ab4b7048f79647c39b7571&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> code is <strong>B&#7853;t</strong></li>
+			<li>HTML code is <strong>T&#7855;t</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=6563520542ab4b7048f79647c39b7571&amp;do=showrules" target="_blank">Forum Rules</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div style="clear: left">
+   
+  <div id="ad_global_above_footer"><!--/* Revive Adserver Javascript Tag v3.0.2 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://ads.phuot.vn/adserver/www/delivery/...'
+  * to
+  *   'https://ads.phuot.vn/adserver/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.phuot.vn/adserver/www/delivery/ajs.php':'http://ads.phuot.vn/adserver/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=9");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.phuot.vn/adserver/www/delivery/ck.php?n=a34f9ca9&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.phuot.vn/adserver/www/delivery/avw.php?zoneid=9&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a34f9ca9' border='0' alt='' /></a></noscript></div>
+</div>
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="forum.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Quick Style Chooser"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;Standard Styles">
+									
+					<option value="8" class="" selected="selected">-- Phuot</option>
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;Mobile Styles">
+					
+					<option value="10" class="" >-- Mobile Style</option>
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+			<select name="langid" onchange="switch_id(this, 'lang')">
+				<optgroup label="Quick Language Chooser">
+					<option value="1" class="" >-- English (US)</option><option value="2" class="" selected="selected">-- VNese</option>
+				</optgroup>
+			</select>
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=6563520542ab4b7048f79647c39b7571" rel="nofollow" accesskey="9">Liên h&#7879;</a></li>
+		<li><a href="http://www.phuot.vn">Phuot.vn - The Real Phuot</a></li>
+		
+		
+		<li><a href="archive/index.php?s=6563520542ab4b7048f79647c39b7571">Archive</a></li>
+		
+		
+		
+		<li><a href="threads/348821-Tour-khám-phá-shangri-la-tại-Tiên-Phong-Travel#top" onclick="document.location.hash='top'; return false;">Top</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">Múi giờ GMT +7. Bây giờ là <span class="time">15:42</span>.</div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by vBulletin&reg<br />Copyright &copy;2000 - 2017, Jelsoft Enterprises Ltd.
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	Digital Point modules: <a href="http://products.digitalpoint.com/vbulletin-sphinx-search.php" target="_blank">Sphinx-based search</a>
+</div>
+  
+
+</div><script type="text/javascript" src="clientscript/him.js"></script>
+</body>
+</html>
