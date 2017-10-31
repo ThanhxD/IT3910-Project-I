@@ -6,7 +6,7 @@
   "scripts": {
     "crawl": "node src/server/crawler/index.js",
     "build": "",
-    "run": "",
+    "server": "node src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ThanhxD/IT3910-Project-I/issues"
   },
-  "homepage": "https://github.com/ThanhxD/IT3910-Project-I#readme"
+  "homepage": "https://github.com/ThanhxD/IT3910-Project-I#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
