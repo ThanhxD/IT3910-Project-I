@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            axios.get('/data').then(function(response) {
+                setTimeout(function() {
+                    document.querySelector('#data_to_show').innerHTML = response.data.toString();
+                }, 5000);
+                document.querySelector('#data_to_show').innerHTML = 'Counting...';
+            })
+        </script>
+    </head>
+    <body>
+        Homepage
+        <div id="data_to_show">
+        </div>
+    </body>
+</html>
