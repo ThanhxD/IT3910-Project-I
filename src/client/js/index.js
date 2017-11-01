@@ -1,9 +1,22 @@
 window.onload = function() {
+    // interval slider
     setInterval(runSlider, 10000);
-    var btnActionCall = document.querySelector('button.btn-action-call');
-    btnActionCall.onclick = openFormRegister;
-    var btnCloseFormRegister = document.querySelector('div.close-btn');
-    btnCloseFormRegister.onclick = closeFormRegister;
+    // set on click event listener
+    window.onclick = setOnClickListener;
+}
+
+function setOnClickListener(event) {
+    var target = event.target;
+    switch (target.id) {
+        case 'join_us': 
+            openFormRegister();
+            break;
+        case 'close_form':
+            closeFormRegister();
+            break;
+        default:
+            // just default
+    }
 }
 
 function runSlider() {
