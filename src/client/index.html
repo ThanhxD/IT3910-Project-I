@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Homepage </title>
-        <link rel="stylesheet" href="css/homepage.css">
-        <script src="js/homepage.js"></script>
+        <title> Tur Guido </title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div class="container">
@@ -82,21 +82,33 @@
                 </div>
             </div>
             <div class="left-intro">
-                <div class="form">
+                <div class="intro">
                     <span class="brand"><h1>Welcome</h2></span>
                     <p class="brief-intro"> This is brief story about us ...<br> Hello world <br> Hello world <br> Hello world <br> Hello world <br> Hello world <br> Hello world <br> Hello world </p>
-                    <button class="btn-action-call">Join us</button>
+                    <button class="btn btn-action-call" id="join_us">Join us</button>
                 </div>
             </div>
             <div class="form-container hidden">
                 <div class="form-register">
-                    <div class="close-btn">&times;</div>
-                    <h3> Sign in now </h3>
-                    <div class="fb-sign-in"><span>Facebook</span></div>
-                    <div class="g-sign-in"><span>Google+</span></div>
-                    <div class="form-sign-up">
-                        or
-                        <a href="#">Sign up</a>
+                    <div class="btn btn-close" id="close_form">&times;</div>
+                    <div class="under">
+                        <div class="social-sign-in">
+                            <h3> Sign in now </h3>
+                            <div class="fb-sign-in"><span>Facebook</span></div>
+                            <div class="g-sign-in"><span>Google+</span></div>
+                            <div class="form-sign-up">
+                                or
+                                <a href="#">Sign up</a>
+                            </div>
+                        </div>
+                        <div class="line-sep"></div>
+                        <div class="form-sign">
+                            <form class="form" action="/signin" method="post">
+                                <input type="text" name="user" class="fill-in" placeholder="Username" value=""/>
+                                <input type="password" name="password" class="fill-in" placeholder="Password" value=""/>
+                                <input type="submit" id="sign_in" class="btn btn-submit" value="Sign in"/>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
