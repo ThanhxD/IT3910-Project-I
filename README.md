@@ -24,6 +24,7 @@ Run server by using command:
 npm run server
 ```
 Take a look at: _localhost:3000_
+
 **_Note:_** _Besure that there's no other application running on port 3000_
 
 
