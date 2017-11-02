@@ -1,7 +1,17 @@
 const path = require('path');
-const express = require('express');
 const bodyParser = require('body-parser');
+const express = require('express');
+const sqlConn = require('../database/connection');
+
 const router = express();
+sqlConn.connect((err) => {
+    if (err) {
+        console.log('Error connecting: ', err.stack);
+        return;
+    } else {
+        console.log('Connected as id:  ',  sqlConn.threadId);
+    }
+});
 
 router.use('/', express.static(path.resolve('src/client')));
 router.use(bodyParser.urlencoded({extended: true}));
@@ -15,7 +25,17 @@ router.post('/signin', (req, res) => {
     let user = req.body.user,
         password = req.body.password;
     console.log('Login: ', user, ' - ', password);
-    res.sendFile(path.resolve('src/client/homepage.html'));
+
+    let query = `SELECT * FROM user WHERE UserName='${user}' AND Password='${password}'`;
+
+    sqlConn.query(query, (err, result, fields) => {
+        if (err) {
+            console.log('Error Querying: ', err.stack);
+            return;
+        } else {
+            res.sendFile(path.resolve('src/client/homepage.html'));
+        }
+    });
 })
 
 router.get('/data', (req, res) => {
