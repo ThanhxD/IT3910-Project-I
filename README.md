@@ -17,13 +17,17 @@ npm i
 
 Usage
 =====
-_(This will be updated during the project)_
+Change config for mysql connection to your database in **_src/database/config.js_**
 
-### Client
-_(for client)_
+Run server by using command:
+```
+npm run server
+```
+Take a look at: _localhost:3000_
 
-### Server
-_(for server)_
+**_Note:_** _Besure that there's no other application running on port 3000_
+
+
 ##### Crawler
 
 First, create a file named **_access-token.js_** under **_src/server/crawler/_** and copy lines below into it.
@@ -43,6 +47,3 @@ Facebook Group Ids to crawl are located in  **_src/server/crawler/fb-groups-id.j
 
 Datas crawled will be saved in **_src/database/data/raw_**.
 It will be used to extract informations, then saved to **_src/database/data/out_** and ready to use.
-
-### Database
-_(for database)_
