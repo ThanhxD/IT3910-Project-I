@@ -3,8 +3,8 @@ body {
     padding: 0;
 }
 
-* {
-    color:#fff;
+.header, .header a, .introduction, .left-intro, .left-intro button, .footer{
+    color: #fff;
 }
 
 .container {
@@ -25,7 +25,6 @@ body {
 
     align-items: center;
     z-index: 1;
-
 }
 
 .header > .logo {
@@ -260,4 +259,47 @@ body {
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.partner {
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.partner > span {
+    color: rgba(50, 50, 50, 0.9);
+    font-size: 30px;    
+}
+
+.partner > ul {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    list-style-type: none; 
+    
+    padding: 5px;
+    margin: 10px 20px;
+}
+
+ul > li {
+    width: 150px;
+    height: 70px;
+    border: 1px solid transparent;
+}
+
+ul > li:hover {
+    border: 1px solid rgba(50, 50, 50, 0.5)
+}
+
+li > img {
+    width: 100%;
+    height: 100%;
+}
+
+.new-tour {
+    background-color: rgb(238, 238, 238);
+}
+.footer {
+    background-color: #34434a;
 }

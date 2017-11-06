@@ -3,6 +3,15 @@ window.onload = function() {
     setInterval(runSlider, 10000);
     // set on click event listener
     window.onclick = setOnClickListener;
+
+    window.onscroll = function (e) {
+        var header = document.querySelector('.header');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            header.style.backgroundColor = 'rgba(50, 50, 50, 0.9)';
+        } else {
+            header.style.backgroundColor = 'rgba(50, 50, 50, 0.3)';            
+        }
+    }
 }
 
 function setOnClickListener(event) {
