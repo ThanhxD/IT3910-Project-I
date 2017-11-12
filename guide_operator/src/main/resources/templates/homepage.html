@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+    <head>
+        <title>Homepage</title>
+        <meta charset="UTF-8" />
+        <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+        <!--<script>-->
+            <!--axios.get('/data').then(function(response) {-->
+                <!--setTimeout(function() {-->
+                    <!--document.querySelector('#data_to_show').innerHTML = response.data.toString();-->
+                <!--}, 5000);-->
+                <!--document.querySelector('#data_to_show').innerHTML = 'Counting...';-->
+            <!--})-->
+        <!--</script>-->
+    </head>
+    <body>
+        <h1>Homepage</h1>
+        Logged user:<span sec:authentication="name"></span> <br/>
+        Roles: <span sec:authentication="principal.authorities"></span>
+        <form action="#" th:action="@{/logout}" method="POST">
+            <button th:type="submit">Logout</button>
+        </form>
+    </body>
+</html>
