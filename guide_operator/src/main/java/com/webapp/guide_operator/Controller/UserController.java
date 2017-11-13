@@ -1,17 +1,34 @@
 package com.webapp.guide_operator.Controller;
 
-import com.webapp.guide_operator.Entities.Role;
-import com.webapp.guide_operator.Entities.User;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.HttpServletRequest;
+import com.webapp.guide_operator.Entities.User;
+import com.webapp.guide_operator.Repository.GuideRepository;
+import com.webapp.guide_operator.Repository.UserRepository;
+import com.webapp.guide_operator.Service.GuideService;
 
 @Controller
 public class UserController {
 
-
+	@Autowired
+	private UserRepository userRepository;
+	@Autowired
+	private GuideService guideService;
+	@RequestMapping(value="/user/id/{id}", method= RequestMethod.GET)
+	public String getUserbyID(@PathVariable("id") int id,Model model) {
+		User user= userRepository.findOne(id);
+		model.addAttribute("user",user);
+		return "user";
+		
+	}
     @GetMapping("/")
     public String index(){
         return "index";
@@ -40,8 +57,9 @@ public class UserController {
     }
 
     @GetMapping("/admin")
-    public String admin(){
-        return "admin";
+    public String admin(Model model){
+    	model.addAttribute("guides",guideService.findAll());
+        return "adminnew";
     }
 
     @GetMapping("/guide")
