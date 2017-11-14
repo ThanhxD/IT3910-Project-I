@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name = "contract")
@@ -23,15 +23,15 @@ public class Contract implements Serializable{
 	@Column(name = "id", nullable = false, unique = true)
 	private int id;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "guideid", referencedColumnName = "id")
 	private Guide guide;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "operatorid", referencedColumnName = "id")
 	private Operator operator;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "tourid", referencedColumnName = "id")
 	private Tour tour;
 	

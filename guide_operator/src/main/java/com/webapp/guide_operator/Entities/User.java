@@ -52,7 +52,6 @@ public class User implements Serializable {
 
 
 
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "roleID", referencedColumnName = "id")
 //    @JsonBackReference
