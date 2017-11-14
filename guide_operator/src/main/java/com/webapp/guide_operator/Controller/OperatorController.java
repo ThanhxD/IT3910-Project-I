@@ -15,7 +15,7 @@ public class OperatorController {
 	@Autowired
 	private OperatorService operatorService;
 	@RequestMapping(value="/operator/id/{id}", method= RequestMethod.GET)
-	public String getUserbyID(@PathVariable("id") int id,Model model) {
+	public String getOperatorbyId(@PathVariable("id") int id,Model model) {
 		Operator operator= operatorService.findOne(id);
 		model.addAttribute("operator",operator);
 		return "operat";

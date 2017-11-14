@@ -30,12 +30,12 @@ public class Operator implements Serializable {
     private User user;
 	
 	@Length(max = 255)
-    @Column(name = "CompanyNameViet", nullable = true)
+    @Column(name = "CompanyNameViet", nullable = false)
 	private String companyNameViet;
 	
 	@Length(max = 255)
-    @Column(name = "cardnumber", nullable = true)
-	private String CompanyNameEng;
+    @Column(name = "CompanyNameEng", nullable = true)
+	private String companyNameEng;
 	
 	public Operator(){}
 
@@ -44,7 +44,7 @@ public class Operator implements Serializable {
 		this.id = id;
 		this.user = user;
 		this.companyNameViet = companyNameViet;
-		CompanyNameEng = companyNameEng;
+		this.companyNameEng = companyNameEng;
 	}
 
 	public int getId() {
@@ -72,11 +72,11 @@ public class Operator implements Serializable {
 	}
 
 	public String getCompanyNameEng() {
-		return CompanyNameEng;
+		return companyNameEng;
 	}
 
 	public void setCompanyNameEng(String companyNameEng) {
-		CompanyNameEng = companyNameEng;
+		this.companyNameEng = companyNameEng;
 	}
 
 	public static long getSerialversionuid() {
