@@ -4,14 +4,11 @@ window.onload = function() {
     // set on click event listener for every element in page
     window.onclick = setOnClickListener;
 
-    window.onscroll = function (e) {
-        var header = document.querySelector('.header');
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            header.style.backgroundColor = 'rgba(50, 50, 50, 0.9)';
-        } else {
-            header.style.backgroundColor = 'rgba(50, 50, 50, 0.3)';            
-        }
-    }
+    setInterval(function() {
+        var carouselList = document.querySelector('.list');
+        curLeft = parseInt(carouselList.style.left) || 0;
+        carouselList.style.left = `${(curLeft >= -1150)? curLeft-210: 0}px`;
+    }, 5000);
 }
 
 function setOnClickListener(event) {
@@ -26,6 +23,16 @@ function setOnClickListener(event) {
             break;
         case 'close_form':
             closeFormRegister();
+            break;
+        default:
+            // just default
+    }
+    switch (target.className) {
+        case 'prev':
+            handleCarousel('prev');
+            break;
+        case 'next':
+            handleCarousel('next');
             break;
         default:
             // just default
@@ -54,4 +61,14 @@ function openFormRegister(mode) {
 function closeFormRegister() {
     var formContainer = document.querySelector('.form-container');
     formContainer.classList.add('hidden');
+}
+
+function handleCarousel(move) {
+    var carouselList = document.querySelector('.list');
+    curLeft = parseInt(carouselList.style.left) || 0;
+    if (move === 'prev') {
+        carouselList.style.left = `${(curLeft >= -1150)? curLeft-210: curLeft}px`;
+    } else {
+        carouselList.style.left = `${(curLeft <= -210)? curLeft+210: curLeft}px`;
+    }
 }

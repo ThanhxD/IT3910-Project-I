@@ -1,4 +1,7 @@
-body {
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -18,9 +21,8 @@ a:hover {
 }
 
 .container {
-    position: relative;
-    margin: 0;
-    padding: 0px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -50,7 +52,7 @@ a:hover {
 }
 
 .introduction {
-    height: 770px;
+    height: 100%;
 
     background-color: #fff;
 }
@@ -60,20 +62,20 @@ a:hover {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 770px;
+    height: 100%;
 }
 
 .introduction > .the-ground > .story {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 770px;
+    height: 100%;
     opacity: 0;
     transition: opacity 5s cubic-bezier(0.55, 0.06, 0.68, 0.19)
 }
 
 .introduction > .the-ground > .story > img {
-    height: 770px;
+    height: 100%;
     width: 100%;
 }
 
@@ -99,7 +101,7 @@ a:hover {
     top: 0;
     left: 0;
 
-    height: 770px;
+    height: 100%;
     width: 25%;
     display: flex;
     padding: 0 10px;
@@ -109,7 +111,6 @@ a:hover {
     background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* Standard syntax */
-    /* background-color: rgba(50, 50, 50, 0.3); */
 }
 
 .left-intro > .intro {
@@ -137,8 +138,9 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 770px;
+    height: 100%;
     background-color: rgba(50, 50, 50, 0.8);
+    z-index: 1000;
 }
 
 .hidden {
@@ -279,45 +281,73 @@ a:hover {
     opacity: 0.8;
 }
 
-.partner {
-    padding: 10px 50px;
-    text-align: center;
-}
+.carousel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-.partner > span {
-    color: rgba(50, 50, 50, 0.9);
-    font-size: 30px;    
-}
+    height: 150px;
+    width: calc(75% - 20px);
 
-.partner > ul {
     display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-    list-style-type: none; 
     
-    padding: 5px;
-    margin: 10px 20px;
+    background: rgba(50, 50, 50, 0.3);
 }
 
-ul > li {
-    width: 150px;
-    height: 70px;
-    border: 1px solid transparent;
+.carousel > .prev,.next {
+    position: relative;
+    top: 0;
+
+    width: 2.5%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 30px;
+
+    cursor: pointer;
+    transition: color 0.2s cubic-bezier(0, -0.54, 0.82, 0.35), font-size 0.2s cubic-bezier(0, -0.54, 0.82, 0.35);
 }
 
-ul > li:hover {
-    border: 1px solid rgba(50, 50, 50, 0.5)
+.carousel > .prev:hover,.next:hover {
+    font-size: 50px;
+    color: #fff;
 }
 
-li > img {
-    width: 100%;
-    height: 100%;
+.carousel > .prev {
+    left: 0;
 }
 
-.new-tour {
-    background-color: rgb(238, 238, 238);
+.carousel > .next {
+    right: 0;
 }
-.footer {
-    background-color: #34434a;
+
+.carousel > .window {
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+}
+
+.list {
+    position: relative;
+    left: 0px;
+
+    display: flex;
+
+    transition: left ease-in-out 1s;
+}
+
+.list > .item {
+    width: 190px;
+    height: 100px;
+    
+    margin: auto 10px;
+}
+
+.item > .partner-logo {
+    width: inherit;
+    height: inherit;
 }
