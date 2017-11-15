@@ -25,14 +25,14 @@ public class Tour implements Serializable {
 	private int id;
 	
 	@Length(max = 255)
-    @Column(name = "TourName", nullable = false)
+    @Column(name = "Tourname", nullable = false)
 	private String tourName;
 	
 	@Length(max = 255)
-    @Column(name = "TourTime", nullable = false)
+    @Column(name = "Tourtime", nullable = false)
 	private String tourTime;
 	
-	@Column(name="TourPrice", nullable=true)
+	@Column(name="Tourprice", nullable=true)
 	private int tourPrice;
 	
 	public Tour() {}
@@ -79,6 +79,14 @@ public class Tour implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	};
+	}
+
+	
+
+	
+
+	
+
+	
 	
 }

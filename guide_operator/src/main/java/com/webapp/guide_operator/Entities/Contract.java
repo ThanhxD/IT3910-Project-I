@@ -35,7 +35,7 @@ public class Contract implements Serializable{
 	@JoinColumn(name = "tourid", referencedColumnName = "id")
 	private Tour tour;
 	
-	@Column(name="DepartureDay", nullable=false)
+	@Column(name="Departureday", nullable=false)
 	private Time departureDay;
 	
 	@Column(name="salary")
