@@ -21,7 +21,7 @@ public class Tour implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ID", nullable = false, unique = true)
+	@Column(name = "ID", nullable = false)
 	private int id;
 	
 	@Length(max = 255)

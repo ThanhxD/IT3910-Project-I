@@ -11,35 +11,37 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "operator_tour_xref")
-public class OperatorTourXref implements Serializable {
+import org.hibernate.validator.constraints.Length;
 
-    /**
+@Entity
+@Table(name="landscapes")
+public class Landscapes implements Serializable{
+
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ID", nullable = false)
+	@Column(name = "id", nullable = false)
 	private int id;
 	
-	@ManyToOne
-	@JoinColumn(name = "operatorid", referencedColumnName = "id")
-	private Operator operator;
+	@Length(max = 255)
+    @Column(name = "Name", nullable = false)
+    private String name;
 	
 	@ManyToOne
-	@JoinColumn(name = "tourid", referencedColumnName = "id")
-	private Tour tour;
+	@JoinColumn(name="locationid" ,referencedColumnName="id")
+	private Location location;
 	
-	public OperatorTourXref() {}
+	public Landscapes() {}
 
-	public OperatorTourXref(int id, Operator operator, Tour tour) {
+	public Landscapes(int id, String name, Location location) {
 		super();
 		this.id = id;
-		this.operator = operator;
-		this.tour = tour;
+		this.name = name;
+		this.location = location;
 	}
 
 	public int getId() {
@@ -50,20 +52,20 @@ public class OperatorTourXref implements Serializable {
 		this.id = id;
 	}
 
-	public Operator getOperator() {
-		return operator;
+	public String getName() {
+		return name;
 	}
 
-	public void setOperator(Operator operator) {
-		this.operator = operator;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public Tour getTour() {
-		return tour;
+	public Location getLocation() {
+		return location;
 	}
 
-	public void setTour(Tour tour) {
-		this.tour = tour;
+	public void setLocation(Location location) {
+		this.location = location;
 	}
 
 	public static long getSerialversionuid() {

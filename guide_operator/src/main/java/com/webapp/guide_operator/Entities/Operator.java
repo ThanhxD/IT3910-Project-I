@@ -21,7 +21,7 @@ public class Operator implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false, unique = true)
+    @Column(name = "id", nullable = false)
     private int id;
     
 

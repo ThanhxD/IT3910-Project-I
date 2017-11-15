@@ -12,33 +12,31 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "operator_tour_xref")
-public class OperatorTourXref implements Serializable {
-
-    /**
+@Table(name="tour_location_xref")
+public class TourLocationXref implements Serializable{
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ID", nullable = false)
+	@Column(name = "id", nullable = false)
 	private int id;
 	
 	@ManyToOne
-	@JoinColumn(name = "operatorid", referencedColumnName = "id")
-	private Operator operator;
+	@JoinColumn(name="locationid" ,referencedColumnName="id")
+	private Location location;
 	
 	@ManyToOne
-	@JoinColumn(name = "tourid", referencedColumnName = "id")
+	@JoinColumn(name="tourid" ,referencedColumnName="id")
 	private Tour tour;
 	
-	public OperatorTourXref() {}
+	public TourLocationXref() {}
 
-	public OperatorTourXref(int id, Operator operator, Tour tour) {
+	public TourLocationXref(int id, Location location, Tour tour) {
 		super();
 		this.id = id;
-		this.operator = operator;
+		this.location = location;
 		this.tour = tour;
 	}
 
@@ -50,12 +48,12 @@ public class OperatorTourXref implements Serializable {
 		this.id = id;
 	}
 
-	public Operator getOperator() {
-		return operator;
+	public Location getLocation() {
+		return location;
 	}
 
-	public void setOperator(Operator operator) {
-		this.operator = operator;
+	public void setLocation(Location location) {
+		this.location = location;
 	}
 
 	public Tour getTour() {

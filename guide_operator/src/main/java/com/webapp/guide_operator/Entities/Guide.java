@@ -24,11 +24,11 @@ public class Guide  implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id", nullable = false, unique = true)
+	@Column(name = "id", nullable = false)
 	private int id;
 	
 	@OneToOne
-	@JoinColumn(name = "userid", referencedColumnName = "id")
+	@JoinColumn(name = "userid", referencedColumnName = "id", unique = true)
     private User user;
     
 	@Length(max = 50)

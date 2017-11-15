@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.webapp.guide_operator.Entities.User;
-import com.webapp.guide_operator.Repository.GuideRepository;
 import com.webapp.guide_operator.Repository.UserRepository;
 import com.webapp.guide_operator.Service.GuideService;
 
 @Controller
-public class UserController {
+public class UserController {	
 
 	@Autowired
 	private UserRepository userRepository;
