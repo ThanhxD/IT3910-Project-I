@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.webapp.guide_operator.Entities.Guide;
 import com.webapp.guide_operator.Repository.GuideRepository;
 @Service
-public class GuideServiceIml implements GuideService{
+public class GuideServiceImpl implements GuideService{
 	@Autowired
 	private GuideRepository guideRepository;
 	

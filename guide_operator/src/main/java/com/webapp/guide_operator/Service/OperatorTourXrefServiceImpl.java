@@ -9,7 +9,7 @@ import com.webapp.guide_operator.Entities.OperatorTourXref;
 import com.webapp.guide_operator.Repository.OperatorTourXrefRepository;
 
 @Service
-public class OperatorTourServiceImpl implements OperatorTourXrefService{
+public class OperatorTourXrefServiceImpl implements OperatorTourXrefService{
 	@Autowired
 	private OperatorTourXrefRepository operatorTourXrefRepository;
 
