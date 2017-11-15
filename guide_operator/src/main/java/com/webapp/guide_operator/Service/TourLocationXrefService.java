@@ -2,7 +2,6 @@ package com.webapp.guide_operator.Service;
 
 import java.util.List;
 
-import com.webapp.guide_operator.Entities.OperatorTourXref;
 import com.webapp.guide_operator.Entities.TourLocationXref;
 
 public interface TourLocationXrefService {
