@@ -1,12 +1,16 @@
 package com.webapp.guide_operator.Entities;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Length;
@@ -31,13 +35,24 @@ public class Location implements Serializable{
 	@Length(max = 255)
     @Column(name = "Locationtype", nullable = false)
 	private String locationType;
+	
+	@ManyToMany
+	@JoinTable(
+	            name = "guide_location_xref",
+	            joinColumns = @JoinColumn(name = "locationid"),
+	            inverseJoinColumns = @JoinColumn(name = "guideid")
+	    )
+    private Set<Guide> guides;
+	
+	@ManyToMany
+	@JoinTable(
+	            name = "tour_location_xref",
+	            joinColumns = @JoinColumn(name = "locationid"),
+	            inverseJoinColumns = @JoinColumn(name = "tourid")
+	    )
+    private Set<Tour> tours;
+	
 	public Location() {}
-	public Location(int id, String locationName, String locationType) {
-		super();
-		this.id = id;
-		this.locationName = locationName;
-		this.locationType = locationType;
-	}
 	public int getId() {
 		return id;
 	}
@@ -56,9 +71,29 @@ public class Location implements Serializable{
 	public void setLocationType(String locationType) {
 		this.locationType = locationType;
 	}
+	public Set<Guide> getGuides() {
+		return guides;
+	}
+	public void setGuides(Set<Guide> guides) {
+		this.guides = guides;
+	}
+	public Set<Tour> getTours() {
+		return tours;
+	}
+	public void setTours(Set<Tour> tour) {
+		this.tours = tour;
+	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	};
+	}
+	public Location(int id, String locationName, String locationType, Set<Guide> guides, Set<Tour> tour) {
+		super();
+		this.id = id;
+		this.locationName = locationName;
+		this.locationType = locationType;
+		this.guides = guides;
+		this.tours = tour;
+	}
 	
 	
 }

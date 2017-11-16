@@ -1,12 +1,16 @@
 package com.webapp.guide_operator.Entities;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Length;
@@ -28,13 +32,30 @@ public class Language implements Serializable {
 	@Length(max = 255)
     @Column(name = "language", nullable = false, unique = true)
 	private String language;
-	
+	@ManyToMany
+	@JoinTable(
+	            name = "guide_language_xref",
+	            joinColumns = @JoinColumn(name = "languageid"),
+	            inverseJoinColumns = @JoinColumn(name = "guideid")
+	    )
+    private Set<Guide> guides;
+	public Set<Guide> getGuides() {
+		return guides;
+	}
+
+	public void setGuides(Set<Guide> guides) {
+		this.guides = guides;
+	}
+
 	public Language() {}
 
-	public Language(int id, String language) {
+	
+
+	public Language(int id, String language, Set<Guide> guides) {
 		super();
 		this.id = id;
 		this.language = language;
+		this.guides = guides;
 	}
 
 	public int getId() {
