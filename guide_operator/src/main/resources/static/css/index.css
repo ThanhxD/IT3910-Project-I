@@ -1,16 +1,28 @@
-body {
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-* {
-    color:#fff;
+.header, .header a, .introduction, .left-intro, .left-intro button, .footer{
+    color: #fff;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.7;
 }
 
 .container {
-    position: relative;
-    margin: 0;
-    padding: 0px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -25,7 +37,6 @@ body {
 
     align-items: center;
     z-index: 1;
-
 }
 
 .header > .logo {
@@ -41,7 +52,7 @@ body {
 }
 
 .introduction {
-    height: 770px;
+    height: 100%;
 
     background-color: #fff;
 }
@@ -51,20 +62,20 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 770px;
+    height: 100%;
 }
 
 .introduction > .the-ground > .story {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 770px;
+    height: 100%;
     opacity: 0;
     transition: opacity 5s cubic-bezier(0.55, 0.06, 0.68, 0.19)
 }
 
 .introduction > .the-ground > .story > img {
-    height: 770px;
+    height: 100%;
     width: 100%;
 }
 
@@ -90,7 +101,7 @@ body {
     top: 0;
     left: 0;
 
-    height: 770px;
+    height: 100%;
     width: 25%;
     display: flex;
     padding: 0 10px;
@@ -100,7 +111,6 @@ body {
     background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.1), rgba(50, 50, 50, 0.6), rgba(100, 100, 100, 0.6)); /* Standard syntax */
-    /* background-color: rgba(50, 50, 50, 0.3); */
 }
 
 .left-intro > .intro {
@@ -128,12 +138,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 770px;
+    height: 100%;
     background-color: rgba(50, 50, 50, 0.8);
+    z-index: 1000;
 }
 
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 .form-register {
@@ -234,12 +245,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    max-height: 40%;
-    margin: 80px auto;
+    max-height: 60%;
+    margin: 50px auto;
 }
 
-.form > .fill-in {
-    width: 80%;
+.form .fill-in {
     height: 30px;
     padding: 2px;
     line-height: 26px;
@@ -247,6 +257,15 @@ body {
     outline: none;
     border-radius: 5px;
     margin-bottom: 30px;
+}
+
+.signup-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-group > .radio-group {
+    margin-bottom: 20px;
 }
 
 .form > .btn-submit {
@@ -262,10 +281,73 @@ body {
     opacity: 0.8;
 }
 
-.success {
-    color: green;
+.carousel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    height: 150px;
+    width: calc(75% - 20px);
+
+    display: flex;
+    
+    background: rgba(50, 50, 50, 0.3);
 }
 
-.error {
-    color: red;
+.carousel > .prev,.next {
+    position: relative;
+    top: 0;
+
+    width: 2.5%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 30px;
+
+    cursor: pointer;
+    transition: color 0.2s cubic-bezier(0, -0.54, 0.82, 0.35), font-size 0.2s cubic-bezier(0, -0.54, 0.82, 0.35);
+}
+
+.carousel > .prev:hover,.next:hover {
+    font-size: 50px;
+    color: #fff;
+}
+
+.carousel > .prev {
+    left: 0;
+}
+
+.carousel > .next {
+    right: 0;
+}
+
+.carousel > .window {
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+}
+
+.list {
+    position: relative;
+    left: 0px;
+
+    display: flex;
+
+    transition: left ease-in-out 1s;
+}
+
+.list > .item {
+    width: 190px;
+    height: 100px;
+    
+    margin: auto 10px;
+}
+
+.item > .partner-logo {
+    width: inherit;
+    height: inherit;
 }
