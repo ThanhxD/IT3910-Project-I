@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Địa điểm</title>
+  <title>VIETTRAVEL</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -112,7 +112,67 @@
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="tour-detail">...</div>
+                      <div role="tabpanel" class="tab-pane fade in active" id="tour-detail">
+                        <!-- form edit tour -->
+                        <div class="form-tour">
+                          <form class="form-horizontal">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"> Tên tour:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" value="Tên tour">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"  >Địa điểm:</label>
+                              <div class="col-sm-8"> 
+                                <input type="text" class="form-control" value="Hà Nội, Đà Nẵng, Quảng Ninh">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"  >Ngôn ngữ:</label>
+                              <div class="col-sm-8"> 
+                                <input type="text" class="form-control" value="">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"  >Thời gian:</label>
+                              <div class="col-sm-2"> 
+                                <input type="number" class="form-control" value="">
+                              </div>
+                              <label class="control-label col-sm-1"  >ngày</label>
+                              <div class="col-sm-2"> 
+                                <input type="number" class="form-control" value="">
+                              </div>
+                              <label class="control-label col-sm-1"  >đêm</label>
+
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"  >Ngày xuất phát:</label>
+                              <div class="col-sm-8"> 
+                                <input type="date" class="form-control" value="">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2"  >Giá:</label>
+                              <div class="col-sm-8"> 
+                                <input type="number" class="form-control" value="">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2">Yêu cầu khác:</label>
+                              <div class="col-sm-8"> 
+                                <textarea class="form-control" rows="3" id="require"></textarea>
+                              </div>
+
+                            </div>
+                            <div class="form-group"> 
+                              <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn btn-primary">Cập nhật</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                       <div role="tabpanel" class="tab-pane fade" id="request-in">
                         <h3 class="text-center">Danh sách ứng viên</h3>
 
@@ -206,130 +266,130 @@
                 </td>
               </tr>
               <tr data-toggle="collapse" data-target="#accordion1" class="clickable">
-                  <td>123456</td>
-                  <td>1/1/2017</td>
-                  <td>Hà Nội - Đà Nẵng - Quảng Nam</td>
-                  <td>1000000đ</td>
-                  <td><a href="#">XXX</a></td>
-                  <td>Hoàn thành</td>
-                  <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                <td>123456</td>
+                <td>1/1/2017</td>
+                <td>Hà Nội - Đà Nẵng - Quảng Nam</td>
+                <td>1000000đ</td>
+                <td><a href="#">XXX</a></td>
+                <td>Hoàn thành</td>
+                <td><span class="glyphicon glyphicon-chevron-right"></span></td>
 
-                </tr>
-                <tr>
-                  <td colspan="7" id="row-collapse">
-                   <div id="accordion1" class="collapse tour-detail">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                      <li role="presentation" class="active"><a href="#tour-detail1" aria-controls="home" role="tab" data-toggle="tab">Thông tin tour</a></li>
-                      <li role="presentation"><a href="#request-in1" aria-controls="profile" role="tab" data-toggle="tab">Yêu cầu gửi đến <span>(2)</span></a></li>
-                      <li role="presentation"><a href="#request-out1" aria-controls="messages" role="tab" data-toggle="tab">Yêu cầu gửi đi <span>(2)</span></a></li>
-                    </ul>
+              </tr>
+              <tr>
+                <td colspan="7" id="row-collapse">
+                 <div id="accordion1" class="collapse tour-detail">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tour-detail1" aria-controls="home" role="tab" data-toggle="tab">Thông tin tour</a></li>
+                    <li role="presentation"><a href="#request-in1" aria-controls="profile" role="tab" data-toggle="tab">Yêu cầu gửi đến <span>(2)</span></a></li>
+                    <li role="presentation"><a href="#request-out1" aria-controls="messages" role="tab" data-toggle="tab">Yêu cầu gửi đi <span>(2)</span></a></li>
+                  </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="tour-detail1">...</div>
-                      <div role="tabpanel" class="tab-pane fade" id="request-in1">
-                        <h3 class="text-center">Danh sách ứng viên</h3>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="tour-detail1">...</div>
+                    <div role="tabpanel" class="tab-pane fade" id="request-in1">
+                      <h3 class="text-center">Danh sách ứng viên</h3>
 
-                        <div class="container-fluid user-request">
-                          <div class="row">
-                            <div class="col-xs-2">
-                              <img src="img/hero_3.jpg">
-                            </div>
-                            <div class="col-xs-4">
-                              <a href="#"><strong>Tên hướng dẫn viên</strong></a>
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Chấp nhận
-                              </button>
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Xóa
-                              </button>
-                            </div>
-
+                      <div class="container-fluid user-request">
+                        <div class="row">
+                          <div class="col-xs-2">
+                            <img src="img/hero_3.jpg">
                           </div>
-                          <div class="row">
-                            <div class="col-xs-2">
-                              <img src="img/hero_3.jpg">
-                            </div>
-                            <div class="col-xs-4">
-                              <a href="#"><strong>Tên hướng dẫn viên</strong></a>
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Chấp nhận
-                              </button>
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Xóa
-                              </button>
-                            </div>
+                          <div class="col-xs-4">
+                            <a href="#"><strong>Tên hướng dẫn viên</strong></a>
                           </div>
-                        </div>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="request-out1">
-                        <h3 class="text-center">Danh sách ứng viên</h3>
-
-                        <div class="container-fluid user-request">
-                          <div class="row">
-                            <div class="col-xs-2">
-                              <img src="img/hero_3.jpg">
-                            </div>
-                            <div class="col-xs-4">
-                              <a href="#"><strong>Tên hướng dẫn viên</strong></a>
-                            </div>
-                            <div class="col-xs-3">
-
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Xóa
-                              </button>
-                            </div>
-
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Chấp nhận
+                            </button>
                           </div>
-                          <div class="row">
-                            <div class="col-xs-2">
-                              <img src="img/hero_3.jpg">
-                            </div>
-                            <div class="col-xs-4">
-                              <a href="#"><strong>Tên hướng dẫn viên</strong></a>
-                            </div>
-                            <div class="col-xs-3">
-
-                            </div>
-                            <div class="col-xs-3">
-                              <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
-                                Xóa
-                              </button>
-                            </div>
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Xóa
+                            </button>
                           </div>
-                          <button type="button" class="btn btn-default margin-btn " data-toggle="button" aria-pressed="false" autocomplete="off">
-                            <span class="glyphicon glyphicon-search"></span> Tìm hướng dẫn viên phù hợp
-                          </button>
 
                         </div>
-
+                        <div class="row">
+                          <div class="col-xs-2">
+                            <img src="img/hero_3.jpg">
+                          </div>
+                          <div class="col-xs-4">
+                            <a href="#"><strong>Tên hướng dẫn viên</strong></a>
+                          </div>
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Chấp nhận
+                            </button>
+                          </div>
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Xóa
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <div role="tabpanel" class="tab-pane fade" id="request-out1">
+                      <h3 class="text-center">Danh sách ứng viên</h3>
+
+                      <div class="container-fluid user-request">
+                        <div class="row">
+                          <div class="col-xs-2">
+                            <img src="img/hero_3.jpg">
+                          </div>
+                          <div class="col-xs-4">
+                            <a href="#"><strong>Tên hướng dẫn viên</strong></a>
+                          </div>
+                          <div class="col-xs-3">
+
+                          </div>
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Xóa
+                            </button>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-2">
+                            <img src="img/hero_3.jpg">
+                          </div>
+                          <div class="col-xs-4">
+                            <a href="#"><strong>Tên hướng dẫn viên</strong></a>
+                          </div>
+                          <div class="col-xs-3">
+
+                          </div>
+                          <div class="col-xs-3">
+                            <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+                              Xóa
+                            </button>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-default margin-btn " data-toggle="button" aria-pressed="false" autocomplete="off">
+                          <span class="glyphicon glyphicon-search"></span> Tìm hướng dẫn viên phù hợp
+                        </button>
+
+                      </div>
+
+                    </div>
                   </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
     </div>
-  </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js\jquery-3.2.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js\jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
