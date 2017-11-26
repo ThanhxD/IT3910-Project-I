@@ -74,8 +74,85 @@
               <li role="presentation"><a href="#">Tour đã hoàn thành</a></li>
               <li role="presentation"><a href="#">Giao dịch</a></li>
             </ul>
-            <button type="button" class="btn btn-danger button-newtour">Đăng tour</button>
+            <button type="button" class="btn btn-danger button-newtour" data-toggle="modal" data-target = "#new-tour">Đăng tour</button>
           </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="new-tour" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Đăng tour</h4>
+                </div>
+                <div class="modal-body">
+
+
+                  <div class="form-tour form-tour-modal">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"> Tên tour:</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"  >Địa điểm:</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"  >Ngôn ngữ:</label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"  >Thời gian:</label>
+                        <div class="col-sm-2">
+                          <input type="number" class="form-control" placeholder="4">
+                        </div>
+                        <label class="control-label col-sm-1"  >ngày</label>
+                        <div class="col-sm-2">
+                          <input type="number" class="form-control" placeholder="3">
+                        </div>
+                        <label class="control-label col-sm-1"  >đêm</label>
+
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"  >Ngày xuất phát:</label>
+                        <div class="col-sm-8">
+                          <input type="date" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3"  >Giá:</label>
+                        <div class="col-sm-8">
+                          <input type="number" class="form-control" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3">Yêu cầu khác:</label>
+                        <div class="col-sm-8">
+                          <textarea class="form-control" rows="3" id="require"></textarea>
+                        </div>
+
+                      </div>
+
+                    </form>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+                  <button type="button" class="btn btn-primary">Đăng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
           <div class="col-md-9">
           
             <table class="table">
@@ -119,7 +196,66 @@
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="tour-detail">...</div>
+                      <div role="tabpanel" class="tab-pane fade in active" id="tour-detail">
+                          <div class="form-tour">
+                              <form class="form-horizontal">
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"> Tên tour:</label>
+                                      <div class="col-sm-8">
+                                          <input type="text" class="form-control" value="Tên tour">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"  >Địa điểm:</label>
+                                      <div class="col-sm-8">
+                                          <input type="text" class="form-control" value="Hà Nội, Đà Nẵng, Quảng Ninh">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"  >Ngôn ngữ:</label>
+                                      <div class="col-sm-8">
+                                          <input type="text" class="form-control" value="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"  >Thời gian:</label>
+                                      <div class="col-sm-2">
+                                          <input type="number" class="form-control" value="">
+                                      </div>
+                                      <label class="control-label col-sm-1"  >ngày</label>
+                                      <div class="col-sm-2">
+                                          <input type="number" class="form-control" value="">
+                                      </div>
+                                      <label class="control-label col-sm-1"  >đêm</label>
+
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"  >Ngày xuất phát:</label>
+                                      <div class="col-sm-8">
+                                          <input type="date" class="form-control" value="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2"  >Giá:</label>
+                                      <div class="col-sm-8">
+                                          <input type="number" class="form-control" value="">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="control-label col-sm-2">Yêu cầu khác:</label>
+                                      <div class="col-sm-8">
+                                          <textarea class="form-control" rows="3" id="require"></textarea>
+                                      </div>
+
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="col-sm-offset-2 col-sm-8">
+                                          <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
                       <div role="tabpanel" class="tab-pane fade" id="request-in">
                         <h3 class="text-center">Danh sách ứng viên</h3>
 
