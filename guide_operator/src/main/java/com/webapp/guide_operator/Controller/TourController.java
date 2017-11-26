@@ -22,4 +22,5 @@ public class TourController {
 		return "tour";
 		
 	}
+
 }

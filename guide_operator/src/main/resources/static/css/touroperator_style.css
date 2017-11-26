@@ -1,0 +1,58 @@
+div#content {
+	margin-top: 100px;
+}
+.button-newtour {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.nav-pills li a {
+	border-radius: 0px 0px 0px 0px;
+	border-bottom: 1px solid #ddd;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 1px solid #dđ
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: #ffffff;
+	color: black;
+}
+.sidebar img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+#row-collapse{
+	padding: 0px;
+	border-top: none;
+}
+.tour-detail {
+	padding: 8px;
+}
+.user-request img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.user-request a {
+	display: block;
+	margin-top: 15px;
+
+}
+.user-request button {
+	margin-top: 5px;
+}
+.margin-btn {
+	margin-left: 25px;
+}

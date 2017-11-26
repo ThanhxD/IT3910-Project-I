@@ -8,4 +8,6 @@ import com.webapp.guide_operator.Entities.Operator;
 
 public interface OperatorRepository extends CrudRepository<Operator, Integer>{
 	Page<Operator> findAll(Pageable pageable);
+	
+	Operator findByUserId(int id);
 }

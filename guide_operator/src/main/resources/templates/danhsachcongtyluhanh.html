@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="utf-8"></meta>
+<title>Management</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<style>
+body {
+	background-color: azure;
+}
+</style>
+<link href="../static/image/favicon.icon"
+	th:href="@{image/favicon.icon}" rel="shortcut icon" />
+</head>
+<body>
+	<h2>
+		&nbsp; &nbsp;<u><a href="#">Trang chủ</a></u>
+	</h2>
+	<h3 align="right">
+		<a><u><a href="proflie.html">YASUO</a> </u> &nbsp; &nbsp;</a> <a
+			href="#">Logout </a> &nbsp; &nbsp; &nbsp; &nbsp;
+	</h3>
+	<h3>
+		<a href="danhsachcongtyluhanh"><u>Danh sách công ty lữ hành</u> </a>&nbsp;&nbsp;
+		<a href="danhsachhuongdanvien">Danh sách hướng dẫn viên</a>&nbsp;&nbsp;<a
+			href="danhsachtour">Danh sách TOUR</a>
+	</h3>
+	<br></br>
+	<br></br>
+	<div class="container">
+		<h2 id="tables">DANH SACH CONG TY LU HANH</h2>
+		<div ng-controller="listdata">
+			<form class="form-inline">
+				<div class="form-group">
+					<label>Search</label> <input type="text" ng-model="search"
+						class="form-control" placeholder="Search"></input>
+				</div>
+			</form>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th ng-click="sort('id')">Id <span
+							class="glyphicon sort-icon" ng-show="sortKey=='id'"
+							ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						</th>
+						<th ng-click="sort('name')">Account <span
+							class="glyphicon sort-icon" ng-show="sortKey=='name'"
+							ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						</th>
+						<th ng-click="sort('pass')">Password <span
+							class="glyphicon sort-icon" ng-show="sortKey=='"
+							ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						</th>
+						<th ng-click="sort('remove')">Remove Account <span
+							class="glyphicon sort-icon" ng-show="sortKey=='' "
+							ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+						</th>
+
+					</tr>
+				</thead>
+				<tbody>
+				<th:block th:unless="${#lists.isEmpty(operators)}">
+					<tr th:each="operator,iterStat : ${operators}"
+						dir-paginate="val in dataCongTy|orderBy:sortKey:reverse|filter:search|itemsPerPage:5">
+						<td th:text="${operator.id}"></td>
+						<td th:text="${operator.companyNameViet}"></td>
+						<td th:text="${operator.user.password}"></td>
+						<td>Remove</td>
+					</tr>
+				</th:block>
+				</tbody>
+                    </table> 
+                    <dir-pagination-controls
+                            max-size="5"
+                            direction-links="true"
+                            boundary-links="true" >
+                    </dir-pagination-controls>
+            </div>
+        </div>  
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="dirPagination.js"></script>                
+        <script>
+            var app = angular.module('MyFirstPagination', ['angularUtils.directives.dirPagination']);
+            app.controller('listdata',function($scope, $http){
+             $scope.dataCongTy = [
+                                    {"id":1,"name":"Cong ty Bach Khoa","pass":"1","remove":"Remove"},
+                                    {"id":2,"name":"Kinh te quoc dan","pass":"1","remove":"remove"},
+                                    {"id":3,"name":"dfg","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":4,"name":"sdfg","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":5,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":6,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":7,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":8,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":9,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":10,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":11,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":12,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":13,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":14,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":15,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":16,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    {"id":17,"name":"srte","pass":"1","remove":"remove","admin":"Select"},
+                                    ]; 
+                                     $scope.sort = function(keyname){
+                            $scope.sortKey = keyname;   //set the sortKey to the param passed
+                            $scope.reverse = !$scope.reverse; //if true make it false and vice versa
+                    }
+            });
+        </script>
+            </body>
+</html>     

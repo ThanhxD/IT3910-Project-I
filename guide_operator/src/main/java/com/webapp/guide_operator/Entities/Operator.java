@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Length;
@@ -33,13 +34,14 @@ public class Operator implements Serializable {
     private User user;
 	
 	@Length(max = 255)
-    @Column(name = "CompanyNameViet", nullable = false)
+    @Column(name = "Companynameviet", nullable = false)
 	private String companyNameViet;
 	
 	@Length(max = 255)
-    @Column(name = "CompanyNameEng", nullable = true)
+    @Column(name = "Companynameeng", nullable = true)
 	private String companyNameEng;
 	
+	@OrderBy("id ASC")
 	@ManyToMany
 	@JoinTable(
 	            name = "operator_tour_xref",

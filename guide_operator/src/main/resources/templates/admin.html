@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<html xmlns:th="http://www.thymeleaf.org" lang="en" >
 <head>
-    <meta charset="UTF-8"/>
-    <title>Admin</title>
+    <meta charset="utf-8"></meta>
+    <title>Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> 
+    <style>
+    body {
+        background-color: azure;
+    }
+    </style>
+    <link href="../static/image/favicon.icon" th:href="@{image/favicon.icon}" rel="shortcut icon"/>
 </head>
-<body>
-<h1>Wellcome ADMIN <span sec:authentication="name"></span></h1>
-
-<form action="#" th:action="@{/logout}" method="POST">
-    <button th:type="submit">Logout</button>
-</form>
+<body >
+    <h2> &nbsp; &nbsp;<u><a href="#">Trang chủ</a></u></h2>
+    <h3 align="right"><a><u><a href="proflie.html">YASUO</a> </u> &nbsp; &nbsp;</a>
+    <a href="#">Logout </a> &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+    <br></br>
+    <h4><a href="danhsachcongtyluhanh"><u>DANH SÁCH CÔNG TY LỮ HÀNH</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="danhsachhuongdanvien"><u>DANH SÁCH HƯỚNG DẪN VIÊN</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="danhsachtour"><u>DANH SÁCH TOUR</u></a>
+    </h4>
 </body>
+
 </html>

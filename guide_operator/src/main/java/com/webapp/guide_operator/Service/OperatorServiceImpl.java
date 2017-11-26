@@ -3,6 +3,8 @@ package com.webapp.guide_operator.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.webapp.guide_operator.Entities.Operator;
@@ -41,5 +43,17 @@ public class OperatorServiceImpl implements OperatorService{
 	public void delete(int id) {
 		operatorRepository.delete(id);
 		
+	}
+
+	@Override
+	public Operator findByUserId(int id) {
+		// TODO Auto-generated method stub
+		return operatorRepository.findByUserId(id);
+	}
+
+	@Override
+	public Page<Operator> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return operatorRepository.findAll(pageable);
 	}
 }
