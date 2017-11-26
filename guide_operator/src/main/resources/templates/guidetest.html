@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<style>
+body {
+	background-color: azure;
+}
+</style>
+<body>
+	<h1>
+	<th:block th:unless="${#lists.isEmpty(guides)}">
+	Haha
+		<table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>UserID</th>
+					<th>Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="guide,iterStat : ${guides}">
+					<td th:text="${guide.id}"></td>
+					<td th:text="${guide.user.id}"></td>
+					<td th:text="${guide.user.fullname}"></td>
+					<td th:text="${guide.user.username}"></td>
+					<td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+					<td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+			</tbody>
+
+		</table>
+	</th:block>
+	</h1>
+</body>
+</head>
+</html>

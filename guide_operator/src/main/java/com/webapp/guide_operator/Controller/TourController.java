@@ -1,0 +1,26 @@
+package com.webapp.guide_operator.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.webapp.guide_operator.Entities.Tour;
+import com.webapp.guide_operator.Service.TourService;
+
+@Controller
+public class TourController {
+	@Autowired
+	private TourService tourService;
+	
+	@RequestMapping(value="/tour/id/{id}", method= RequestMethod.GET)
+	public String getTourbyId(@PathVariable("id") int id,Model model) {
+		Tour tour= tourService.findOne(id);
+		model.addAttribute("tour",tour);
+		return "tour";
+		
+	}
+
+}

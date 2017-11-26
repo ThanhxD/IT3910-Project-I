@@ -1,6 +1,5 @@
 package com.webapp.guide_operator.Entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 

@@ -1,8 +1,8 @@
 package com.webapp.guide_operator.Service;
 
-import com.webapp.guide_operator.Entities.Role;
-import com.webapp.guide_operator.Entities.User;
-import com.webapp.guide_operator.Repository.UserRepository;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -12,8 +12,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashSet;
-import java.util.Set;
+import com.webapp.guide_operator.Entities.Role;
+import com.webapp.guide_operator.Entities.User;
+import com.webapp.guide_operator.Repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -26,8 +27,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
 
         User user = userRepository.findByUsername(s);
-
+        
         if(user==null){
+        	System.out.println("null");
             throw new UsernameNotFoundException("User not found");
         }
 
@@ -39,4 +41,5 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return new org.springframework.security.core.userdetails.User(user.getUsername(),user.getPassword(),grantedAuthorities);
 //        return null;
     }
+    
 }
