@@ -42,5 +42,11 @@ public class LocationServiceImpl implements LocationService{
 		locationRepository.delete(id);
 		
 	}
+
+	@Override
+	public Location findByLocationName(String name) {
+		// TODO Auto-generated method stub
+		return locationRepository.findByLocationName(name);
+	}
 	
 }

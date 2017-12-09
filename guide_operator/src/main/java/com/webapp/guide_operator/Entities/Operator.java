@@ -83,9 +83,8 @@ public class Operator implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	public Operator(int id, User user, String companyNameViet, String companyNameEng, Set<Tour> tours) {
+	public Operator(User user, String companyNameViet, String companyNameEng) {
 		super();
-		this.id = id;
 		this.user = user;
 		this.companyNameViet = companyNameViet;
 		this.companyNameEng = companyNameEng;

@@ -20,7 +20,7 @@ import org.hibernate.validator.constraints.Length;
 
 
 @Entity
-@Table(name = "Guide")
+@Table(name = "guide")
 public class Guide  implements Serializable {
 
     /**
@@ -33,9 +33,11 @@ public class Guide  implements Serializable {
 	private int id;
 	
 	@OneToOne
-	@JoinColumn(name = "userid", referencedColumnName = "id", unique = true)
+	@JoinColumn(name = "userid", referencedColumnName = "id")
     private User user;
-    
+	
+
+	
 	@Length(max = 50)
     @Column(name = "cardnumber", nullable = true)
     private String cardnumber;
@@ -72,11 +74,26 @@ public class Guide  implements Serializable {
 	            inverseJoinColumns = @JoinColumn(name = "locationid")
 	    )
     private Set<Location> locations;
+	@ManyToMany
+	@JoinTable(
+	            name = "tour_guide_xref",
+	            joinColumns = @JoinColumn(name = "guideid"),
+	            inverseJoinColumns = @JoinColumn(name = "tourid")
+	    )
+    private Set<Tour> tours;
     public Guide(){
     }
 
 	public int getId() {
 		return id;
+	}
+
+	public Set<Tour> getTours() {
+		return tours;
+	}
+
+	public void setTours(Set<Tour> tours) {
+		this.tours = tours;
 	}
 
 	public void setId(int id) {

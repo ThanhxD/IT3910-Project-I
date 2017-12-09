@@ -1,3 +1,14 @@
+nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav img {
+	margin-left: 20px;
+}
+.nav-bar-fixed-top{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 div#content {
 	margin-top: 100px;
 }
@@ -8,15 +19,15 @@ div#content {
 	margin-top: 20px;
 }
 .nav-pills li a {
-	border-radius: 0px 0px 0px 0px;
+	/*border-radius: 0px 0px 0px 0px;
 	border-bottom: 1px solid #ddd;
 	margin-top: 0px;
-	margin-bottom: 0px;
-	border: 1px solid #dđ
+	margin-bottom: 0px;*/
+
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-	background-color: #ffffff;
-	color: black;
+	/*background-color: #ffffff;
+	color: black;*/
 }
 .sidebar img {
 	width: 100px;
@@ -61,4 +72,67 @@ div#content {
 }
 .form-tour-modal {
 	margin-top: 0px;
+}
+div.modal-find {
+	width: 800px;
+}
+.tour-guide-box {
+	list-style: none;
+	padding-left: 0;
+}
+.find-guider img {
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+
+}
+.find-guider a {
+	display: block;
+	margin-top: 10px;
+
+	font-size: 20px;
+}
+.find-guider i {
+
+}
+.checked {
+	color: gold;
+}
+.tour-guide-box p {
+	color: black;
+	text-align: center;
+}
+.glyphicon-star{
+	font-size: 20px;
+}
+.glyphicon-star-empty{
+	font-size: 20px;
+}
+div.star-ratting {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+}
+.tour-guide-box button {
+	margin-top: 15px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+
+	background-color: #fff;
+}
+.nav-pills>li>a {
+	border-radius: 0px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+	border-color: transparent;
+	border-bottom: 2px solid #7451a0;
 }

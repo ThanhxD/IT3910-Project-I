@@ -1,8 +1,10 @@
 package com.webapp.guide_operator.Service;
 
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import com.webapp.guide_operator.Entities.Guide;
@@ -13,9 +15,9 @@ public class GuideServiceImpl implements GuideService{
 	private GuideRepository guideRepository;
 	
 	@Override
-	public Iterable<Guide> findAll() {
+	public Page<Guide> findAll(Pageable pageable) {
 		// TODO Auto-generated method stub
-		return guideRepository.findAll();
+		return guideRepository.findAll(pageable);
 	}
 
 	@Override
@@ -40,6 +42,14 @@ public class GuideServiceImpl implements GuideService{
 	public void delete(int id) {
 		guideRepository.delete(id);
 		
+	}
+
+
+
+	@Override
+	public Guide findByUserId(int id) {
+		// TODO Auto-generated method stub
+		return guideRepository.findByUserId(id);
 	}
 
 }

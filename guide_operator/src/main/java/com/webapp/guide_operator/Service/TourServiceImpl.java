@@ -3,6 +3,8 @@ package com.webapp.guide_operator.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.webapp.guide_operator.Entities.Tour;
@@ -14,9 +16,9 @@ public class TourServiceImpl implements TourService{
 	private TourRepository tourRepository;
 
 	@Override
-	public Iterable<Tour> findAll() {
+	public Page<Tour> findAll(Pageable pageable) {
 		// TODO Auto-generated method stub
-		return tourRepository.findAll();
+		return tourRepository.findAll(pageable);
 	}
 
 	@Override

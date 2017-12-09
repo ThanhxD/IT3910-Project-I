@@ -2,10 +2,13 @@ package com.webapp.guide_operator.Service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import com.webapp.guide_operator.Entities.Tour;
 
 public interface TourService {
-	Iterable<Tour> findAll();
+	Page<Tour> findAll(Pageable pageable);
 
     List<Tour> search(String q);
 

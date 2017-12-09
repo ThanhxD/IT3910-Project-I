@@ -5,6 +5,7 @@ import java.util.List;
 import com.webapp.guide_operator.Entities.Location;
 
 public interface LocationService {
+	Location findByLocationName(String name);
 	Iterable<Location> findAll();
 
     List<Location> search(String q);
