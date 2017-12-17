@@ -136,3 +136,7 @@ div.star-ratting {
 	border-color: transparent;
 	border-bottom: 2px solid #7451a0;
 }
+.input-margin {
+	margin-top: 5px;
+	margin-left: 5px;
+}
