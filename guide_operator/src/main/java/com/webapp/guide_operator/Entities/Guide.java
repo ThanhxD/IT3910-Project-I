@@ -13,6 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Length;
@@ -74,6 +75,7 @@ public class Guide  implements Serializable {
 	            inverseJoinColumns = @JoinColumn(name = "locationid")
 	    )
     private Set<Location> locations;
+	@OrderBy("id ASC")
 	@ManyToMany
 	@JoinTable(
 	            name = "tour_guide_xref",
@@ -177,7 +179,7 @@ public class Guide  implements Serializable {
 	}
 
 	public Guide(int id, User user, String cardnumber, String cardtype, String status, Date expirationdate,
-			String experience, String gender, Set<Language> languages, Set<Location> locations) {
+			String experience, String gender) {
 		super();
 		this.id = id;
 		this.user = user;
@@ -187,8 +189,7 @@ public class Guide  implements Serializable {
 		this.expirationdate = expirationdate;
 		this.experience = experience;
 		this.gender = gender;
-		this.languages = languages;
-		this.locations = locations;
+		
 	}
 
 	

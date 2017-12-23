@@ -69,9 +69,8 @@ public class Tour_Guide_Xref implements Serializable {
 		return serialVersionUID;
 	}
 
-	public Tour_Guide_Xref(int id, Guide guide, Tour tour, int status) {
+	public Tour_Guide_Xref( Guide guide, Tour tour, int status) {
 		super();
-		this.id = id;
 		this.guide = guide;
 		this.tour = tour;
 		this.status = status;

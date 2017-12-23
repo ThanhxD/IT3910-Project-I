@@ -1,25 +1,98 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en" >
+<html lang="vi" ng-app="MyFirstPagination"
+	xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8"></meta>
-    <title>Management</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> 
-    <style>
-    body {
-        background-color: azure;
-    }
-    </style>
-    <link href="../static/image/favicon.icon" th:href="@{image/favicon.icon}" rel="shortcut icon"/>
+<meta charset="utf-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Management</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<link href="../static/css/bootstrap.min.css"
+	th:href="@{/css/bootstrap.min.css}" rel="stylesheet"></link>
+<link href="../static/css/style.css" th:href="@{/css/style.css}"
+	rel="stylesheet"></link>
+<link href="../static/css/touroperator_style.css"
+	th:href="@{/css/touroperator_style.css}" rel="stylesheet"></link>
+<style type="text/css">
+body {
+	background-color: azure;
+}
+
+h4 {
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+h5 {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+img {
+	margin-left: 130px;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+</style>
+<link href="../static/image/favicon.ico" th:href="@{/image/favicon.ico}"
+	rel="shortcut icon"></link>
 </head>
-<body >
-    <h2> &nbsp; &nbsp;<u><a href="#">Trang chủ</a></u></h2>
-    <h3 align="right"><a><u><a href="proflie.html">YASUO</a> </u> &nbsp; &nbsp;</a>
-    <a href="#">Logout </a> &nbsp; &nbsp; &nbsp; &nbsp;</h3>
-    <br></br>
-    <h4><a href="danhsachcongtyluhanh"><u>DANH SÁCH CÔNG TY LỮ HÀNH</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="danhsachhuongdanvien"><u>DANH SÁCH HƯỚNG DẪN VIÊN</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="danhsachtour"><u>DANH SÁCH TOUR</u></a>
-    </h4>
+<body>
+	<div id="header">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Logo</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#">Địa điểm</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Trợ giúp</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"><b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Thông tin công ty</a></li>
+								<li><a href="#">Trợ giúp</a></li>
+								<li><a href="#">Cài đặt</a></li>
+								<li class="divider"></li>
+								<li><a th:href="@{/logout}">Đăng xuất</a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</div>
+	<br></br>
+	<br></br>
+	<img src="../static/image/adminPIC.jpg" th:src="@{image/adminPIC.jpg}"></img>
+	<br></br>
+	<h4>
+		<a th:href="@{/danhsachtour}"> DANH SÁCH TOUR </a> <br></br>
+		<a th:href="@{/danhsachhuongdanvien}"> DANH SÁCH HƯỚNG DẪN VIÊN</a> <br></br>
+		<a th:href="@{/danhsachcongtyluhanh}">DANH SÁCH CÔNG TY LỮ HÀNH</a>
+	</h4>
 </body>
 
 </html>

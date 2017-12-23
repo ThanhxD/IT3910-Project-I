@@ -42,6 +42,12 @@ public class LanguageServiceImpl implements LanguageService{
 		languageRepository.delete(id);
 		
 	}
+
+	@Override
+	public Language findByLanguage(String language) {
+		// TODO Auto-generated method stub
+		return languageRepository.findByLanguage(language);
+	}
 	
 	
 }

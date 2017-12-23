@@ -1,69 +1,77 @@
 package com.webapp.guide_operator.Controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.webapp.guide_operator.Entities.User;
-import com.webapp.guide_operator.Repository.UserRepository;
-import com.webapp.guide_operator.Service.GuideService;
-import com.webapp.guide_operator.Service.OperatorService;
-
 @Controller
-public class UserController {	
+public class UserController {
 
-	@Autowired
-	private UserRepository userRepository;
-	@Autowired
-	private OperatorService operatorService;
-	@Autowired
-	private GuideService guideService;
-	@RequestMapping(value="/user/id/{id}", method= RequestMethod.GET)
-	public String getUserbyID(@PathVariable("id") int id,Model model) {
-		User user= userRepository.findOne(id);
-		model.addAttribute("user",user);
-		return "user";
-		
+	@GetMapping("/")
+	public String index() {
+		return "index";
 	}
-    @GetMapping("/")
-    public String index(){
-        return "index";
-    }
-    
-   
- 
-    @GetMapping("/default")
-    public String defaultAfterLogin(HttpServletRequest request) {
-        if (request.isUserInRole("ROLE_ADMIN")){
-            return "redirect:/admin";
-        }
-        if (request.isUserInRole("ROLE_GUIDE")){
-            return "redirect:/guide";
-        }
-        return "redirect:/operator";
-    }
 
-    @GetMapping("/403")
-    public String accessDenied() {
-        return "403";
-    }
+	@GetMapping("/default")
+	public String defaultAfterLogin(HttpServletRequest request) {
+		if (request.isUserInRole("ROLE_ADMIN")) {
+			return "redirect:/admin";
+		}
+		if (request.isUserInRole("ROLE_GUIDE")) {
+			return "redirect:/guide";
+		}
+		return "redirect:/operator";
+	}
 
-    @GetMapping("/login")
-    public String as() {
-    	return "index";
-    }
-    @GetMapping("/admin")
-    public String admin(Model model){
-        return "admin";
-    }
+	@GetMapping("/home")
+	public String home(HttpServletRequest request) {
+		if (request.isUserInRole("ROLE_ADMIN")) {
+			return "redirect:/admin";
+		}
+		if (request.isUserInRole("ROLE_GUIDE")) {
+			return "redirect:/guide";
+		}
+		if (request.isUserInRole("ROLE_OPERATOR"))
+			return "redirect:/operator";
+		return "index";
+	}
 
-    
+	@GetMapping("/403")
+	public String accessDenied() {
+		return "403";
+	}
 
-    
+	@GetMapping("/login")
+	public String as() {
+		return "index";
+	}
+
+	@GetMapping("/admin")
+	public String admin(Model model) {
+		return "admin";
+	}
+
+	/**
+	 * @description: go logout method
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String logout(HttpServletRequest request, HttpServletResponse response) {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		if (authentication != null) {
+			new SecurityContextLogoutHandler().logout(request, response, authentication);
+		}
+		return "redirect:/login?logout";
+	}
+
 }

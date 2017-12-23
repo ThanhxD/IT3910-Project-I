@@ -15,4 +15,7 @@ public interface Tour_Guide_Xref_Service {
     void save(Tour_Guide_Xref tourguidexref);
 
     void delete(int id);
+    
+    int recommendByLocation(int tourid,int locationid,int languageid);
+    void operatorRequest(int tourid,int guideid);
 }

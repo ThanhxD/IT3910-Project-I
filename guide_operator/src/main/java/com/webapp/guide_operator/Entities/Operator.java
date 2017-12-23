@@ -88,7 +88,7 @@ public class Operator implements Serializable {
 		this.user = user;
 		this.companyNameViet = companyNameViet;
 		this.companyNameEng = companyNameEng;
-		this.tours = tours;
+
 	}
 	
 	

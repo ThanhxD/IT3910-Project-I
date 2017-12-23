@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="vi">
 <head>
-	<meta charset="utf-8"></meta>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Địa điểm</title>
+<meta charset="utf-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title></title>
 
-	<!-- Bootstrap -->
-	<link href="../static/css/bootstrap.min.css"
+<!-- Bootstrap -->
+<link href="../static/css/bootstrap.min.css"
 	th:href="@{/css/bootstrap.min.css}" rel="stylesheet"></link>
-	<link href="../static/css/style.css" th:href="@{/css/style.css}"
+<link href="../static/css/style.css" th:href="@{/css/style.css}"
 	rel="stylesheet"></link>
-	<link href="../static/css/touroperator_style.css"
+<link href="../static/css/touroperator_style.css"
 	th:href="@{/css/touroperator_style.css}" rel="stylesheet"></link>
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 </head>
 <body>
 	<div id="header">
@@ -29,78 +29,73 @@
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-				</button>
-				<img src="../static/image/logo.png" th:src="@{/image/logo.png}">
-			</img>
-		</div>
-		<div class="container">
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Địa điểm</a></li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Trợ giúp</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"><b
-						th:text="${operator.companyNameViet}"></b><b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Thông tin công ty</a></li>
-							<li><a href="#">Trợ giúp</a></li>
-							<li><a href="#">Cài đặt</a></li>
-							<li class="divider"></li>
-							<li>
-								<form th:action="@{/logout}" method="POST">
-									<button th:type="submit">Đăng xuất</button>
-								</form>
-							</li>
-
-						</ul></li>
-					</ul>
+						data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<img src="../static/image/logo.png" th:src="@{/image/logo.png}"></img>
 				</div>
-				<!-- /.navbar-collapse -->
+				<div class="container">
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a th:href="@{/home}">Trang chủ</a></li>
+							<li><a href="#">Địa điểm</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Trợ giúp</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown"><b
+									th:text="${operator.companyNameViet}"></b><b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a th:href="@{/operator/info}" href="/operator/info">Thông
+											tin công ty</a></li>
+									<li><a href="#">Trợ giúp</a></li>
+									<li><a href="#">Cài đặt</a></li>
+									<li class="divider"></li>
+									<li><a th:href="@{/logout}">Đăng xuất</a></li>
+
+								</ul></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
 			</div>
-		</div>
-	</nav>
-</div>
-<div id="content">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 sidebar">
+		</nav>
+	</div>
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 sidebar">
 
 
-				<img src="../static/image/hero_1.jpg" th:src="@{/image/hero_1.jpg}"></img>
-				<h4 class="text-center">
-					<b th:text="${operator.companyNameViet}"></b>
-				</h4>
-				<ul class="nav nav-pills nav-stacked nav-tabs" role="tablist">
-					<li role="presentation"><a href="#operator-info" role="tab"
-						data-toggle="tab">Thông tin công ty</a></li>
-						<li role="presentation"><a href="#setting" role="tab"
-							data-toggle="tab">Cài đặt</a></li>
-							<li role="presentation"><a href="#tour-active" role="tab"
-								data-toggle="tab">Tour đang chạy</a></li>
-								<li role="presentation"><a href="#tour-finished" role="tab"
-									data-toggle="tab">Tour đã hoàn thành</a></li>
-								</ul>
-								<button type="button" class="btn btn-danger button-newtour"
-								data-toggle="modal" data-target="#new-tour">Đăng tour</button>
-								<!-- Modal -->
-								<div class="modal fade" id="new-tour" tabindex="-1" role="dialog"
-								aria-labelledby="myModalLabel">
-								<div class="modal-dialog" role="document">
-									<form class="form-horizontal" th:action="@{/operator/posttour}"
-									method="POST">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"
+					<img src="../static/image/hero_1.jpg" th:src="@{/image/hero_1.jpg}"></img>
+					<h4 class="text-center">
+						<b th:text="${operator.companyNameViet}"></b>
+					</h4>
+					<ul class="nav nav-pills nav-stacked nav-tabs">
+						<li><a th:href="@{/operator/info}">Thông tin công ty</a></li>
+						<li><a href="#">Cài đặt</a></li>
+						<li class="active"><a href="#">Quản lý tour</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger button-newtour"
+						data-toggle="modal" data-target="#new-tour">Đăng tour</button>
+					<form th:action="@{/operator/searchguide}" th:method="GET">
+						<button type="submit" class="btn btn-danger button-newtour">
+							Tìm HDV</button>
+					</form>
+					<!-- Modal -->
+					<div class="modal fade" id="new-tour" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<form class="form-horizontal" th:action="@{/operator/posttour}"
+								method="POST">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
 											aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -120,265 +115,336 @@
 											<div class="form-group input_fields_wrap">
 												<label class="control-label col-sm-3">Địa điểm:</label>
 												<div class="col-sm-8 ">
-													<select class="form-control">
-														<option>Hà Nội</option><option>Hà Giang</option><option>Cao Bằng</option><option>Bắc Kạn</option><option>Tuyên Quang</option><option>Lào Cai</option><option>Điện Biên</option><option>Lai Châu</option><option>Sơn La</option><option>Yên Bái</option><option>Hòa Bình</option><option>Thái Nguyên</option><option>Lạng Sơn</option><option>Quảng Ninh</option><option>Bắc Giang</option><option>Phú Thọ</option><option>Vĩnh Phúc</option><option>Bắc Ninh</option><option>Hải Dương</option><option>Hải Phòng</option><option>Hưng Yên</option><option>Thái Bình</option><option>Hà Nam</option><option>Nam Định</option><option>Ninh Bình</option><option>Thanh Hóa</option><option>Nghệ An</option><option>Hà Tĩnh</option><option>Quảng Bình</option><option>Quảng Trị</option><option>Thừa Thiên Huế</option><option>Đà Nẵng</option><option>Quảng Nam</option><option>Quảng Ngãi</option><option>Bình Định</option><option>Phú Yên</option><option>Khánh Hòa</option><option>Ninh Thuận</option><option>Bình Thuận</option><option>Kon Tum</option><option>Gia Lai</option><option>Đắk Lắk</option><option>Đắk Nông</option><option>Lâm Đồng</option><option>Bình Phước</option><option>Tây Ninh</option><option>Bình Dương</option><option>Đồng Nai</option><option>Bà Rịa - Vũng Tàu</option><option>Hồ Chí Minh</option><option>Long An</option><option>Tiền Giang</option><option>Bến Tre</option><option>Trà Vinh</option><option>Vĩnh Long</option><option>Đồng Tháp</option><option>An Giang</option><option>Kiên Giang</option><option>Cần Thơ</option><option>Hậu Giang</option><option>Sóc Trăng</option><option>Bạc Liêu</option><option>Cà Mau</option>
+													<select name="location1" class="form-control">
+														<option>Hà Nội</option>
+														<option>Hà Giang</option>
+														<option>Cao Bằng</option>
+														<option>Bắc Kạn</option>
+														<option>Tuyên Quang</option>
+														<option>Lào Cai</option>
+														<option>Điện Biên</option>
+														<option>Lai Châu</option>
+														<option>Sơn La</option>
+														<option>Yên Bái</option>
+														<option>Hòa Bình</option>
+														<option>Thái Nguyên</option>
+														<option>Lạng Sơn</option>
+														<option>Quảng Ninh</option>
+														<option>Bắc Giang</option>
+														<option>Phú Thọ</option>
+														<option>Vĩnh Phúc</option>
+														<option>Bắc Ninh</option>
+														<option>Hải Dương</option>
+														<option>Hải Phòng</option>
+														<option>Hưng Yên</option>
+														<option>Thái Bình</option>
+														<option>Hà Nam</option>
+														<option>Nam Định</option>
+														<option>Ninh Bình</option>
+														<option>Thanh Hóa</option>
+														<option>Nghệ An</option>
+														<option>Hà Tĩnh</option>
+														<option>Quảng Bình</option>
+														<option>Quảng Trị</option>
+														<option>Thừa Thiên Huế</option>
+														<option>Đà Nẵng</option>
+														<option>Quảng Nam</option>
+														<option>Quảng Ngãi</option>
+														<option>Bình Định</option>
+														<option>Phú Yên</option>
+														<option>Khánh Hòa</option>
+														<option>Ninh Thuận</option>
+														<option>Bình Thuận</option>
+														<option>Kon Tum</option>
+														<option>Gia Lai</option>
+														<option>Đắk Lắk</option>
+														<option>Đắk Nông</option>
+														<option>Lâm Đồng</option>
+														<option>Bình Phước</option>
+														<option>Tây Ninh</option>
+														<option>Bình Dương</option>
+														<option>Đồng Nai</option>
+														<option>Bà Rịa - Vũng Tàu</option>
+														<option>Hồ Chí Minh</option>
+														<option>Long An</option>
+														<option>Tiền Giang</option>
+														<option>Bến Tre</option>
+														<option>Trà Vinh</option>
+														<option>Vĩnh Long</option>
+														<option>Đồng Tháp</option>
+														<option>An Giang</option>
+														<option>Kiên Giang</option>
+														<option>Cần Thơ</option>
+														<option>Hậu Giang</option>
+														<option>Sóc Trăng</option>
+														<option>Bạc Liêu</option>
+														<option>Cà Mau</option>
 													</select>
 												</div>
-												
-											    <button class="add_field_button btn btn-link"><span class="glyphicon glyphicon-plus"></span></button>
-											
+
+
+												<button class="add_field_button btn btn-link">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
+
+
 											</div>
 											<div class="form-group">
 												<label class="control-label col-sm-3">Ngôn ngữ:</label>
 												<div class="col-sm-8">
-													<select class="form-control">
-														<option>Việt Nam</option>
+													<select name="language" class="form-control">
+														<option>Vietnamese</option>
 														<option>Anh Quốc</option>
-														 <option>Afghanistan</option>
-														 <option>Ai Cập</option>
-														 <option>Albania</option>
-														 <option>Algeria</option>
-														 <option>Andorra</option>
-														 <option>Angola</option>
-														 <option>Anguilla</option>
-														 <option>Anh Quốc</option>
-														 <option>Antigua và Barbuda</option>
-														 <option>Argentina</option>
-														 <option>Armenia</option>
-														 <option>Aruba</option>
-														 <option>Azerbaijan</option>
-														 <option>Ba Lan</option>
-														 <option>Bahamas</option>
-														 <option>Bahrain</option>
-														 <option>Bangladesh</option>
-														 <option>Barbados</option>
-														 <option>Belarus</option>
-														 <option>Belize</option>
-														 <option>Benin</option>
-														 <option>Bermuda</option>
-														 <option>Bhutan</option>
-														 <option>Bolivia</option>
-														 <option>Bosna và Hercegovina</option>
-														 <option>Botswana</option>
-														 <option>Brazil</option>
-														 <option>Brunei</option>
-														 <option>Bulgaria</option>
-														 <option>Burkina Faso</option>
-														 <option>Burundi</option>
-														 <option>Bỉ</option>
-														 <option>Bồ Đào Nha</option>
-														 <option>Bờ Biển Ngà</option>
-														 <option>CHDC Congo</option>
-														 <option>CHDCND Triều Tiên</option>
-														 <option>CHND Trung Hoa</option>
-														 <option>Cameroon</option>
-														 <option>Campuchia</option>
-														 <option>Canada</option>
-														 <option>Cape Verde</option>
-														 <option>Chile</option>
-														 <option>Colombia</option>
-														 <option>Comoros</option>
-														 <option>Costa Rica</option>
-														 <option>Croatia</option>
-														 <option>Cuba</option>
-														 <option>Curaçao</option>
-														 <option>Các tiểu vương quốc Ả rập thống nhất (UEA)</option>
-														 <option>Cộng hòa Congo</option>
-														 <option>Cộng hòa Dominica</option>
-														 <option>Cộng hòa Macedonia</option>
-														 <option>Cộng hòa Séc</option>
-														 <option>Cộng hòa Trung Phi</option>
-														 <option>Djibouti</option>
-														 <option>Dominica</option>
-														 <option>Ecuador</option>
-														 <option>El Salvador</option>
-														 <option>Eritrea</option>
-														 <option>Estonia</option>
-														 <option>Ethiopia</option>
-														 <option>Fiji</option>
-														 <option>Gabon</option>
-														 <option>Gambia</option>
-														 <option>Ghana</option>
-														 <option>Gibraltar</option>
-														 <option>Greenland</option>
-														 <option>Grenada</option>
-														 <option>Gruzia</option>
-														 <option>Guam</option>
-														 <option>Guatemala</option>
-														 <option>Guernsey</option>
-														 <option>Guinea</option>
-														 <option>Guinea Xích Đạo</option>
-														 <option>Guinea-Bissau</option>
-														 <option>Guyana</option>
-														 <option>Haiti</option>
-														 <option>Hoa Kỳ</option></option>
-														 <option>Honduras</option>
-														 <option>Hungary</option>
-														 <option>Hy Lạp</option>
-														 <option>Hà Lan</option>
-														 <option>Hàn Quốc</option>
+														<option>Ai Cập</option>
+														<option>Albania</option>
+														<option>Algeria</option>
+														<option>Andorra</option>
+														<option>Angola</option>
+														<option>Anguilla</option>
+														<option>Anh Quốc</option>
+														<option>Antigua và Barbuda</option>
+														<option>Argentina</option>
+														<option>Armenia</option>
+														<option>Aruba</option>
+														<option>Azerbaijan</option>
+														<option>Ba Lan</option>
+														<option>Bahamas</option>
+														<option>Bahrain</option>
+														<option>Bangladesh</option>
+														<option>Barbados</option>
+														<option>Belarus</option>
+														<option>Belize</option>
+														<option>Benin</option>
+														<option>Bermuda</option>
+														<option>Bhutan</option>
+														<option>Bolivia</option>
+														<option>Bosna và Hercegovina</option>
+														<option>Botswana</option>
+														<option>Brazil</option>
+														<option>Brunei</option>
+														<option>Bulgaria</option>
+														<option>Burkina Faso</option>
+														<option>Burundi</option>
+														<option>Bỉ</option>
+														<option>Bồ Đào Nha</option>
+														<option>Bờ Biển Ngà</option>
+														<option>CHDC Congo</option>
+														<option>CHDCND Triều Tiên</option>
+														<option>CHND Trung Hoa</option>
+														<option>Cameroon</option>
+														<option>Campuchia</option>
+														<option>Canada</option>
+														<option>Cape Verde</option>
+														<option>Chile</option>
+														<option>Colombia</option>
+														<option>Comoros</option>
+														<option>Costa Rica</option>
+														<option>Croatia</option>
+														<option>Cuba</option>
+														<option>Curaçao</option>
+														<option>Các tiểu vương quốc Ả rập thống nhất
+															(UEA)</option>
+														<option>Cộng hòa Congo</option>
+														<option>Cộng hòa Dominica</option>
+														<option>Cộng hòa Macedonia</option>
+														<option>Cộng hòa Séc</option>
+														<option>Cộng hòa Trung Phi</option>
+														<option>Djibouti</option>
+														<option>Dominica</option>
+														<option>Ecuador</option>
+														<option>El Salvador</option>
+														<option>Eritrea</option>
+														<option>Estonia</option>
+														<option>Ethiopia</option>
+														<option>Fiji</option>
+														<option>Gabon</option>
+														<option>Gambia</option>
+														<option>Ghana</option>
+														<option>Gibraltar</option>
+														<option>Greenland</option>
+														<option>Grenada</option>
+														<option>Gruzia</option>
+														<option>Guam</option>
+														<option>Guatemala</option>
+														<option>Guernsey</option>
+														<option>Guinea</option>
+														<option>Guinea Xích Đạo</option>
+														<option>Guinea-Bissau</option>
+														<option>Guyana</option>
+														<option>Haiti</option>
+														<option>Hoa Kỳ</option>
+														<option>Honduras</option>
+														<option>Hungary</option>
+														<option>Hy Lạp</option>
+														<option>Hà Lan</option>
+														<option>Hàn Quốc</option>
 														<option>Hồng Kông</option>
-														 <option>Iceland</option>
-														 <option>Indonesia</option>
-														 <option>Iran</option>
-														 <option>Iraq</option>
-														 <option>Ireland</option>
-														 <option>Israel</option>
-														 <option>Jamaica</option>
-														 <option>Jersey</option>
-														 <option>Jordan</option>
-														 <option>Kazakhstan</option>
-														 <option>Kenya</option>
-														 <option>Kiribati</option>
-														 <option>Kuwait</option>
-														 <option>Kyrgyzstan</option>
-														 <option>Latvia</option>
-														 <option>Lesotho</option>
-														 <option>Liban</option>
-														 <option>Liberia</option>
-														 <option>Libya</option>
-														 <option>Liechtenstein</option>
-														 <option>Litva</option>
-														 <option>Liên Bang Nga</option>
-														 <option>Liên bang Micronesia</option>
-														 <option>Luxembourg</option>
-														 <option>Lào</option>
-														 <option>Macau</option>
-														 <option>Madagascar</option>
-														 <option>Malawi</option>
+														<option>Iceland</option>
+														<option>Indonesia</option>
+														<option>Iran</option>
+														<option>Iraq</option>
+														<option>Ireland</option>
+														<option>Israel</option>
+														<option>Jamaica</option>
+														<option>Jersey</option>
+														<option>Jordan</option>
+														<option>Kazakhstan</option>
+														<option>Kenya</option>
+														<option>Kiribati</option>
+														<option>Kuwait</option>
+														<option>Kyrgyzstan</option>
+														<option>Latvia</option>
+														<option>Lesotho</option>
+														<option>Liban</option>
+														<option>Liberia</option>
+														<option>Libya</option>
+														<option>Liechtenstein</option>
+														<option>Litva</option>
+														<option>Liên Bang Nga</option>
+														<option>Liên bang Micronesia</option>
+														<option>Luxembourg</option>
+														<option>Lào</option>
+														<option>Macau</option>
+														<option>Madagascar</option>
+														<option>Malawi</option>
 														<option>Malaysia</option>
-														 <option>Maldives</option>
-														 <option>Mali</option>
-														 <option>Malta</option>
-														 <option>Maroc</option>
-														 <option>Mauritania</option>
-														 <option>Mauritius</option>
-														 <option>Mexico</option>
-														 <option>Moldova</option>
-														 <option>Monaco</option>
-														 <option>Montenegro</option>
-														 <option>Montserrat</option>
-														 <option>Mozambique</option>
+														<option>Maldives</option>
+														<option>Mali</option>
+														<option>Malta</option>
+														<option>Maroc</option>
+														<option>Mauritania</option>
+														<option>Mauritius</option>
+														<option>Mexico</option>
+														<option>Moldova</option>
+														<option>Monaco</option>
+														<option>Montenegro</option>
+														<option>Montserrat</option>
+														<option>Mozambique</option>
 														<option>Myanmar</option>
-														 <option>Mông Cổ</option>
-														 <option>Na Uy</option>
-														 <option>Nam Phi</option>
-														 <option>Nam Sudan</option>
-														 <option>Namibia</option>
-														 <option>Nauru</option>
-														 <option>Nepal</option>
-														 <option>New Zealand</option>
-														 <option>Nhật Bản</option>
-														 <option>Nicaragua</option>
-														 <option>Niger</option>
-														 <option>Nigeria</option>
-														 <option>Niue</option>
-														 <option>Oman</option>
-														 <option>Pakistan</option>
-														 <option>Palau</option>
-														 <option>Panama</option>
-														 <option>Papua New Guinea</option>
-														 <option>Paraguay</option>
+														<option>Mông Cổ</option>
+														<option>Na Uy</option>
+														<option>Nam Phi</option>
+														<option>Nam Sudan</option>
+														<option>Namibia</option>
+														<option>Nauru</option>
+														<option>Nepal</option>
+														<option>New Zealand</option>
+														<option>Nhật Bản</option>
+														<option>Nicaragua</option>
+														<option>Niger</option>
+														<option>Nigeria</option>
+														<option>Niue</option>
+														<option>Oman</option>
+														<option>Pakistan</option>
+														<option>Palau</option>
+														<option>Panama</option>
+														<option>Papua New Guinea</option>
+														<option>Paraguay</option>
 														<option>Peru</option>
 														<option>Philippines</option>
 														<option>Pháp</option>
 														<option>Phần Lan</option>
-														 <option>Puerto Rico</option>
-														 <option>Qatar</option>
-														 <option>Quần đảo Bắc Mariana</option>
-														 <option>Quần đảo Cayman</option>
-														 <option>Quần đảo Cook</option>
-														 <option>Quần đảo Falkland</option>
-														 <option>Quần đảo Faroe</option>
-														 <option>Quần đảo Marshall</option>
-														 <option>Quần đảo Pitcairn</option>
-														 <option>Quần đảo Solomon</option>
-														 <option>Quần đảo Turks và Caicos</option>
-														 <option>Quần đảo Virgin thuộc Anh</option>
-														 <option>Quần đảo Virgin thuộc Mỹ</option>
-														 <option>Romania</option>
-														 <option>Rwanda</option>
-														 <option>Saint Helena, Ascension và Tristan da Cunha</option>
-														 <option>Saint Kitts và Nevis</option>
-														 <option>Saint Lucia</option>
-														 <option>Saint Vincent và Grenadines</option>
-														 <option>Samoa</option>
-														 <option>Samoa thuộc Mỹ</option>
-														 <option>San Marino</option>
-														 <option>Senegal</option>
-														 <option>Serbia</option>
-														 <option>Seychelles</option>
+														<option>Puerto Rico</option>
+														<option>Qatar</option>
+														<option>Quần đảo Bắc Mariana</option>
+														<option>Quần đảo Cayman</option>
+														<option>Quần đảo Cook</option>
+														<option>Quần đảo Falkland</option>
+														<option>Quần đảo Faroe</option>
+														<option>Quần đảo Marshall</option>
+														<option>Quần đảo Pitcairn</option>
+														<option>Quần đảo Solomon</option>
+														<option>Quần đảo Turks và Caicos</option>
+														<option>Quần đảo Virgin thuộc Anh</option>
+														<option>Quần đảo Virgin thuộc Mỹ</option>
+														<option>Romania</option>
+														<option>Rwanda</option>
+														<option>Saint Helena, Ascension và Tristan da
+															Cunha</option>
+														<option>Saint Kitts và Nevis</option>
+														<option>Saint Lucia</option>
+														<option>Saint Vincent và Grenadines</option>
+														<option>Samoa</option>
+														<option>Samoa thuộc Mỹ</option>
+														<option>San Marino</option>
+														<option>Senegal</option>
+														<option>Serbia</option>
+														<option>Seychelles</option>
 														<option>Sierra Leone</option>
-														 <option>Singapore</option>
-														 <option>Sint Maarten</option>
-														 <option>Slovakia</option>
-														 <option>Slovenia</option>
-														 <option>Somalia</option>
-														 <option>Sri Lanka</option>
-														 <option>Sudan</option>
-														 <option>Suriname</option>
-														 <option>Swaziland</option>
-														 <option>Syria</option>
-														 <option>São Tomé và Príncipe</option>
-														 <option>Síp</option>
-														 <option>Tajikistan</option>
-														 <option>Tanzania</option>
-														 <option>Tchad</option>
-														<option> Thái Lan</option>
-														 <option>Thổ Nhĩ Kỳ</option>
-														 <option>Thụy Sĩ</option>
-														 <option>Thụy Điển</option>
-														 <option>Togo</option>
-														 <option>Tokelau</option>
-														 <option>Tonga</option>
-														 <option>Trinidad và Tobago</option>
-														 <option>Trung Hoa Dân Quốc (Đài Loan)</option>
-														 <option>Tunisia</option>
-														<option> Turkmenistan</option>
-														 <option>Tuvalu</option>
-														 <option>Tây Ban Nha</option>
-														 <option>Tây Sahara</option>
-														 <option>Uganda</option>
-														 <option>Ukraina</option>
-														 <option>Uruguay</option>
-														 <option>Uzbekistan</option>
-														 <option>Vanuatu</option>
-														 <option>Vatican</option>
-														 <option>Venezuela</option>
-														 <option>Việt Nam</option>
-														 <option>Vùng lãnh thổ Palestine</option>
-														 <option>Yemen</option>
-														 <option>Zambia</option>
-														 <option>Zimbabwe</option>
-														 <option>Áo</option>
-														 <option>Úc</option>
-														 <option>Ý</option>
-														 <option>Đan Mạch</option>
-														 <option>Đông Timor</option>
-														 <option>Đảo Man</option>
-														 <option>Đức</option>
-														 <option><Ả Rập Saudi</option>
+														<option>Singapore</option>
+														<option>Sint Maarten</option>
+														<option>Slovakia</option>
+														<option>Slovenia</option>
+														<option>Somalia</option>
+														<option>Sri Lanka</option>
+														<option>Sudan</option>
+														<option>Suriname</option>
+														<option>Swaziland</option>
+														<option>Syria</option>
+														<option>São Tomé và Príncipe</option>
+														<option>Síp</option>
+														<option>Tajikistan</option>
+														<option>Tanzania</option>
+														<option>Tchad</option>
+														<option>Thái Lan</option>
+														<option>Thổ Nhĩ Kỳ</option>
+														<option>Thụy Sĩ</option>
+														<option>Thụy Điển</option>
+														<option>Togo</option>
+														<option>Tokelau</option>
+														<option>Tonga</option>
+														<option>Trinidad và Tobago</option>
+														<option>Trung Hoa Dân Quốc (Đài Loan)</option>
+														<option>Tunisia</option>
+														<option>Turkmenistan</option>
+														<option>Tuvalu</option>
+														<option>Tây Ban Nha</option>
+														<option>Tây Sahara</option>
+														<option>Uganda</option>
+														<option>Ukraina</option>
+														<option>Uruguay</option>
+														<option>Uzbekistan</option>
+														<option>Vanuatu</option>
+														<option>Vatican</option>
+														<option>Venezuela</option>
+														<option>Việt Nam</option>
+														<option>Vùng lãnh thổ Palestine</option>
+														<option>Yemen</option>
+														<option>Zambia</option>
+														<option>Zimbabwe</option>
+														<option>Áo</option>
+														<option>Úc</option>
+														<option>Ý</option>
+														<option>Đan Mạch</option>
+														<option>Đông Timor</option>
+														<option>Đảo Man</option>
+														<option>Đức</option>
+														<option>Ả Rập Saudi</option>
 														<option>Ấn Độ</option>
 													</select>
 												</div>
+
+												<input type="text" id="count-location" class="form-control"
+													name="count-location"></input>
+
 											</div>
 											<div class="form-group">
 												<label class="control-label col-sm-3">Thời gian:</label>
 												<div class="col-sm-2">
 													<input type="number" name="day" class="form-control"
-													placeholder="4"></input>
+														placeholder="4" min="0"></input>
 												</div>
 												<label class="control-label col-sm-1">ngày</label>
 												<div class="col-sm-2">
-													<input type="number" name="night" class="form-control"
-													placeholder="3"></input>
+													<input type="number" name="night" min="0"
+														class="form-control" placeholder="3"></input>
 												</div>
 												<label class="control-label col-sm-1">đêm</label>
 
 											</div>
 											<div class="form-group">
 												<label class="control-label col-sm-3">Ngày xuất
-												phát:</label>
+													phát:</label>
 												<div class="col-sm-8">
 													<input type="date" name="date" class="form-control"></input>
 												</div>
@@ -403,13 +469,14 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-default"
-										data-dismiss="modal">Hủy</button>
+											data-dismiss="modal">Hủy</button>
 
 										<button th:type="submit" class="btn btn-primary">Đăng</button>
 
 									</div>
 								</div>
 							</form>
+
 						</div>
 					</div>
 				</div>
@@ -417,238 +484,219 @@
 
 				<div class="col-md-9">
 					<!--tab-pane-sidebar-->
-					<div role="tabpanel" class="tab-pane fade in active"
-					id="tour-active">
 
 					<table class="table">
 						<thead>
 							<tr>
 								<th>Mã tour</th>
-								<th>Ngày tạo</th>
 								<th>Tên tour</th>
+								<th>Thời gian</th>
 								<th>Giá</th>
-								<th>Hướng dẫn viên</th>
-								<th>Trạng thái</th>
+								<th>Chức năng</th>
 								<th></th>
 							</tr>
 						</thead>
 						<th:block th:unless="${#lists.isEmpty(operator.tours)}">
-						<tbody th:each="tour,iterStat : ${operator.tours}">
-							<tr data-toggle="collapse"
-							th:attr="data-target='#u'+${tour.id}" class="clickable">
-							<td th:text="${tour.id}"></td>
-							<td th:text="${tour.tourTime}"></td>
-							<td th:text="${tour.tourName}"></td>
-							<th:block th:if="${tour.tourPrice != null}">
-							<td th:text="${tour.tourPrice}"></td>
-						</th:block>
-						<th:block th:if="${tour.tourPrice == null}">
-						<td>Null</td>
-					</th:block>
-					<td><a href="#">???</a></td>
-					<td th:text="${tour.status}"></td>
-					<td><span class="glyphicon glyphicon-chevron-right"></span></td>
-
-				</tr>
-				<tr>
-					<td colspan="7" id="row-collapse">
-						<div th:id="'u'+${tour.id}" class="collapse tour-detail">
-							<!-- Nav tabs -->
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active"><a
-									th:attr="href='#t'+${tour.id}" aria-controls="home"
-									role="tab" data-toggle="tab">Thông tin tour</a></li>
-									<li role="presentation"><a
-										th:attr="href='#i'+${tour.id}" aria-controls="profile"
-										role="tab" data-toggle="tab">Yêu cầu gửi đến <span>(2)</span></a></li>
-										<li role="presentation"><a
-											th:attr="href='#o'+${tour.id}" aria-controls="messages"
-											role="tab" data-toggle="tab">Yêu cầu gửi đi <span>(2)</span></a></li>
-										</ul>
-
-										<!-- Tab panes -->
-										<div class="tab-content">
-											<div role="tabpanel" class="tab-pane fade in active"
-											th:attr="id='t'+${tour.id}">
-											<div class="form-tour">
-												<form class="form-horizontal"
-												th:attr="action='/operator/update/'+${tour.id}"
-												th:method="POST">
-												<div class="form-group">
-													<label class="control-label col-sm-2"> Tên
-													tour:</label>
-													<div class="col-sm-8">
-														<input type="text" class="form-control"
-														name="tourName" th:attr="value=${tour.tourName}"></input>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Địa điểm:</label>
-													<div class="col-sm-8">
-														<input type="text" class="form-control"></input>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Ngôn ngữ:</label>
-													<div class="col-sm-8">
-														<input type="text" class="form-control" value=""></input>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Thời
-													gian:</label>
-													<div class="col-sm-2">
-														<input type="number" class="form-control" name="day"></input>
-													</div>
-													<label class="control-label col-sm-1">ngày</label>
-													<div class="col-sm-2">
-														<input type="number" class="form-control" name="night"
-														value=""></input>
-													</div>
-													<label class="control-label col-sm-1">đêm</label>
-
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Ngày xuất
-													phát:</label>
-													<div class="col-sm-8">
-														<input type="date" class="form-control" value=""></input>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Giá:</label>
-													<div class="col-sm-8">
-														<input type="number" class="form-control"
-														name="tourPrice" th:attr="value=${tour.tourPrice}"></input>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-sm-2">Yêu cầu
-													khác:</label>
-													<div class="col-sm-8">
-														<textarea class="form-control" rows="3" id="require"></textarea>
-													</div>
-
-												</div>
-												<div class="form-group">
-													<div class="col-sm-offset-2 col-sm-8">
-														<button type="submit" class="btn btn-primary">Cập
-														nhật</button>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane fade"
-									th:attr="id='i'+${tour.id}">
-									<h3 class="text-center">Danh sách ứng viên</h3>
-									<th:block
-									th:unless="${#lists.isEmpty(tour.tourGuideXref)}">
-									<div th:each="tourxref,iterStat : ${tour.tourGuideXref}"
-									class="container-fluid user-request">
-									<div th:if="${tourxref.status!=2}" class="row">
-										<div class="col-xs-2">
-											<img src="../static/image/hero_3.jpg"
-											th:src="@{/image/hero_3.jpg}"></img>
-										</div>
-										<div class="col-xs-4">
-											<a href="#"><strong
-												th:text="${tourxref.guide.user.fullname}"></strong></a>
-											</div>
-											<form th:attr="action='/tour/accept/'+${tourxref.id}"
+							<tbody th:each="tour,iterStat : ${operator.tours}">
+								<tr data-toggle="collapse" th:attr="data-target='#u'+${tour.id}"
+									class="clickable">
+									<td th:text="${tour.id}"></td>
+									<td th:text="${tour.tourName}"></td>
+									<td th:text="${tour.tourTime}"></td>
+									<th:block th:if="${tour.tourPrice != null}">
+										<td th:text="${tour.tourPrice}+' VNĐ'"></td>
+									</th:block>
+									<th:block th:if="${tour.tourPrice == null}">
+										<td>Null</td>
+									</th:block>
+									<td><form th:attr="action='/tour/delete/'+${tour.id}"
 											th:method="POST">
-											<div th:if="${tourxref.status==0}" class="col-xs-3">
+											<div class="col-xs-3">
 
 
-												<button type="submit" class="btn btn-primary"
-												>Chấp nhận</button>
+												<button type="submit" class="btn btn-default">Xóa</button>
 
 											</div>
-										</form>
-										<form th:attr="action='/tour/cancel/'+${tourxref.id}"
-										th:method="POST">
-										<div class="col-xs-3">
+										</form></td>
+									<td><span class="glyphicon glyphicon-chevron-right"></span></td>
+
+								</tr>
+								<tr>
+									<td colspan="7" id="row-collapse">
+										<div th:id="'u'+${tour.id}" class="collapse tour-detail">
+											<!-- Nav tabs -->
+											<ul class="nav nav-tabs" role="tablist">
+												<li role="presentation" class="active"><a
+													th:attr="href='#t'+${tour.id}" aria-controls="home"
+													role="tab" data-toggle="tab">Thông tin tour</a></li>
+												<li role="presentation"><a
+													th:attr="href='#i'+${tour.id}" aria-controls="profile"
+													role="tab" data-toggle="tab">Yêu cầu gửi đến <span></span></a>
+												</li>
+												<li role="presentation"><a
+													th:attr="href='#o'+${tour.id}" aria-controls="messages"
+													role="tab" data-toggle="tab">Yêu cầu gửi đi <span></span></a>
+												</li>
+											</ul>
+
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade in active"
+													th:attr="id='t'+${tour.id}">
+													<div class="form-tour">
+														<form class="form-horizontal"
+															th:attr="action='/operator/update/'+${tour.id}"
+															th:method="POST">
+															<div class="form-group">
+																<label class="control-label col-sm-2"> Tên tour:</label>
+																<div class="col-sm-8">
+																	<input type="text" class="form-control" name="tourName"
+																		th:attr="value=${tour.tourName}"></input>
+																</div>
+															</div>
+															<div class="form-group"
+																th:each="location:${tour.locations}">
+																<label class="control-label col-sm-2">Địa điểm:</label>
+																<div class="col-sm-8">
+																	<input type="text" class="form-control"
+																		th:value="${location.locationName}"></input>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="control-label col-sm-2">Thời gian:</label>
+																<div class="col-sm-2">
+																	<input type="number" class="form-control" name="day"></input>
+																</div>
+																<label class="control-label col-sm-1">ngày</label>
+																<div class="col-sm-2">
+																	<input type="number" class="form-control" name="night"
+																		value=""></input>
+																</div>
+																<label class="control-label col-sm-1">đêm</label>
+
+															</div>
+
+															<div class="form-group">
+																<label class="control-label col-sm-2">Giá:</label>
+																<div class="col-sm-8">
+																	<input type="number" class="form-control"
+																		name="tourPrice" th:attr="value=${tour.tourPrice}"></input>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="control-label col-sm-2">Yêu cầu
+																	khác:</label>
+																<div class="col-sm-8">
+																	<textarea class="form-control" rows="3" id="require"></textarea>
+																</div>
+
+															</div>
+															<div class="form-group">
+																<div class="col-sm-offset-2 col-sm-8">
+																	<button type="submit" class="btn btn-primary">Cập
+																		nhật</button>
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+												<div role="tabpanel" class="tab-pane fade"
+													th:attr="id='i'+${tour.id}">
+													<h3 class="text-center">Danh sách ứng viên</h3>
+													<th:block th:unless="${#lists.isEmpty(tour.tourGuideXref)}">
+														<div th:each="tourxref,iterStat : ${tour.tourGuideXref}"
+															class="container-fluid user-request">
+															<div th:if="${tourxref.status!=2}" class="row">
+																<div class="col-xs-2">
+																	<img src="../static/image/hero_3.jpg"
+																		th:src="@{/image/hero_3.jpg}"></img>
+																</div>
+																<div class="col-xs-4">
+																	<a th:attr="href='/operator/'+${tourxref.guide.id}"><strong
+																		th:text="${tourxref.guide.user.fullname}"></strong></a>
+																</div>
+																<form th:attr="action='/tour/accept/'+${tourxref.id}"
+																	th:method="POST">
+																	<div th:if="${tourxref.status==0}" class="col-xs-3">
 
 
-											<button type="submit" class="btn btn-default"
-											>Xóa</button>
+																		<button type="submit" class="btn btn-primary">Chấp
+																			nhận</button>
 
+																	</div>
+																</form>
+
+																<form th:attr="action='/tour/cancel/'+${tourxref.id}"
+																	th:method="POST">
+																	<div class="col-xs-3">
+
+
+																		<button type="submit" class="btn btn-default">Xóa
+																		</button>
+
+																	</div>
+																</form>
+
+
+															</div>
+
+														</div>
+													</th:block>
+												</div>
+												<div role="tabpanel" class="tab-pane fade"
+													th:attr="id='o'+${tour.id}">
+													<h3 class="text-center">Lời mời gửi đi</h3>
+													<th:block th:unless="${#lists.isEmpty(tour.tourGuideXref)}">
+														<div th:each="tourxref,iterStat : ${tour.tourGuideXref}"
+															class="container-fluid user-request">
+
+															<div th:if="${tourxref.status==2}" class="row">
+																<div class="col-xs-2">
+																	<img src="../static/image/hero_3.jpg"
+																		th:src="@{/image/hero_3.jpg}"></img>
+																</div>
+																<div class="col-xs-4">
+																	<a th:attr="href='/operator/'+${tourxref.guide.id}"><strong
+																		th:text="${tourxref.guide.user.fullname}"></strong></a>
+																</div>
+																<div class="col-xs-3"></div>
+																<form th:attr="action='/tour/cancel/'+${tourxref.id}"
+																	th:method="POST">
+																	<div class="col-xs-3">
+
+																		<button type="submit" class="btn btn-default">Xóa
+																		</button>
+
+																	</div>
+																</form>
+															</div>
+
+
+														</div>
+													</th:block>
+												</div>
+											</div>
 										</div>
-									</form>
+									</td>
+								</tr>
 
-
-								</div>
-
-							</div>
+							</tbody>
 						</th:block>
-					</div>
-					<div role="tabpanel" class="tab-pane fade"
-					th:attr="id='o'+${tour.id}">
-					<h3 class="text-center">Danh sách ứng viên</h3>
-					<th:block
-					th:unless="${#lists.isEmpty(tour.tourGuideXref)}">
-					<div th:each="tourxref,iterStat : ${tour.tourGuideXref}"
-					class="container-fluid user-request">
-
-					<div th:if="${tourxref.status==2}" class="row">
-						<div class="col-xs-2">
-							<img src="../static/image/hero_3.jpg"
-							th:src="@{/image/hero_3.jpg}"></img>
-						</div>
-						<div class="col-xs-4">
-							<a href="#"><strong
-								th:text="${tourxref.guide.user.fullname}"></strong></a>
-							</div>
-							<div class="col-xs-3"></div>
-							<form th:attr="action='/tour/cancel/'+${tourxref.id}"
-							th:method="POST">
-							<div class="col-xs-3">
-
-
-								<button type="submit" class="btn btn-default"
-								>Xóa</button>
-
-							</div>
-						</form>
-					</div>
-
-
+					</table>
 
 
 				</div>
-			</th:block>
+			</div>
+
 		</div>
 	</div>
-</div>
-</td>
-</tr>
 
-</tbody>
-</th:block>
-</table>
-</div>
-<div role="tabpanel" class="tab-pane fade in" id="operator-info">
-
-</div>
-<div role="tabpanel" class="tab-pane fade in" id="setting"></div>
-
-
-<div role="tabpanel" class="tab-pane fade in" id="tour-finished">
-
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../static/js/jquery-3.2.1.min.js"
-th:src="@{/js/jquery-3.2.1.min.js}"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../static/js/bootstrap.min.js"
-th:src="@{/js/bootstrap.min.js}"></script>
-<script src="../static/js/operator.js"
-th:src="@{/js/operator.js}"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../static/js/jquery-3.2.1.min.js"
+		th:src="@{/js/jquery-3.2.1.min.js}"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../static/js/bootstrap.min.js"
+		th:src="@{/js/bootstrap.min.js}"></script>
+	<script src="../static/js/operator.js" th:src="@{/js/operator.js}"></script>
 </body>
 </html>

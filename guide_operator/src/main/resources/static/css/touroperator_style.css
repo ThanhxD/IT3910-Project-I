@@ -138,5 +138,14 @@ div.star-ratting {
 }
 .input-margin {
 	margin-top: 5px;
-	margin-left: 5px;
+	margin-left: 0px;
+}
+.col-sm-8>p{
+	color: black;
+}
+#count-location {
+	border: none;
+	background-color: #fff;
+	color: #fff;
+	box-shadow: none;
 }
