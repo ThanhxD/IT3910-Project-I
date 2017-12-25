@@ -4,6 +4,7 @@
         <title> Tur Guido </title>
         <link rel="stylesheet" href="../static/css/index.css" th:href="@{/css/index.css}"></link>
         <script src="../static/js/index.js" th:src="@{/js/index.js}"></script>
+        <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
     </head>
     <body>
         <div class="container">
@@ -105,18 +106,27 @@
                         <div class="form-sign">
                             <p th:if="${param.error}" class="error">Invalid username or password</p>
                             <p th:if="${param.logout}" class="success">You have been logged out</p>
-                            <form class="form" action="/signin" th:action="@{/login}" method="POST">
-                                <input type="text" name="username" class="fill-in" placeholder="Username" value=""/>
-                                <input type="password" name="password" class="fill-in" placeholder="Password" value=""/>
+                            <p th:if="${status!=null}">
+                                <p th:text="${status}"></p>
+                            </p>
+                            <form class="form" id="form1" th:action="@{/signup}" method="POST">
+                                <input type="text" name="username" class="fill-in" placeholder="Username" required=""/>
+                                <input type="password" name="password" class="fill-in" placeholder="Password" required=""/>
+                                
                                 <div class="signup-group hidden">
-                                    <input type="email" name="email" class="fill-in" placeholder="Email" value=""/>
+                                    <input type="password" name="repassword" class="fill-in" placeholder="Re-Password"/>
+                                    <input type="email" name="email" class="fill-in" placeholder="Email"/>
+                                   
                                     <div class="radio-group">
-                                        <input type="radio" name="org_ind" class="radio_org" value="Công ty">Công ty</input>
-                                        <input type="radio" name="org_ind" class="radio_org" value="Cá nhân">Hướng dẫn viên</input>
+                                        <input type="radio" name="org_ind" class="radio_org" value="operator">Công ty</input>
+                                        <input type	="radio" name="org_ind" class="radio_org" value="guide">Hướng dẫn viên</input>
                                     </div>
+                                    
                                 </div>
+                           
                                 <input type="submit" id="btn_sign_in_up" class="btn btn-submit" value="Sign in"/>
                             </form>
+
                         </div>
                     </div>
                 </div>

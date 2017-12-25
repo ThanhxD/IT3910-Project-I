@@ -61,8 +61,10 @@ public class Tour_Guide_Xref_Impl implements Tour_Guide_Xref_Service{
 	@Override
 	public int recommendByLocation(int tourid, int locationid,int languageid) {
 		String query="insert into tour_guide_xref (tourid,guideid,status) "
-				+ " select "+ tourid+",glo.guideid,3 from guide_location_xref glo,guide_language_xref glang where  glo.guideid=glang.guideid and glo.locationid="+locationid+" and glang.languageid="+languageid+";";
+				+ " select "+ tourid+",glo.guideid,3 from guide_location_xref glo,guide_language_xref glang where  glo.guideid=glang.guideid and glo.locationid="+locationid+" and glang.languageid="+languageid+
+				" and glo.guideid not in ( select guideid from tour_guide_xref where tourid="+tourid+")"+";";
 		try {
+			
 			stm.executeUpdate(query);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

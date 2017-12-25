@@ -50,9 +50,12 @@ function openFormRegister(mode) {
     if (mode === 'signup') {
         document.querySelector('.signup-group').classList.remove('hidden');
         document.querySelector('.btn-submit').value = 'Sign up';
+        $("#form1").attr("action","/signup");
+
     } else {
         document.querySelector('.signup-group').classList.add('hidden');
         document.querySelector('.btn-submit').value = 'Sign in';
+        $("#form1").attr("action","/login");
     }
     var formContainer = document.querySelector('.form-container');
     formContainer.classList.remove('hidden');

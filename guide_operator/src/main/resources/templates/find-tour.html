@@ -178,16 +178,16 @@
 								<div class="row">
 
 									<div class="col-xs-4">
-										<a href="#"><strong th:text="${iterStat.count+') Tên tour'}"></strong></a> <i th:text="${tour.tourName}"></i>
+										<a href="#"><strong th:text="${iterStat.count+') Tên tour'}"></strong></a> <b th:text="${tour.tourName}"></b>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><strong>Thời gian </strong></a> <i th:text="${tour.tourTime}"></i>
+										<a href="#"><strong>Thời gian </strong></a> <b th:text="${tour.tourTime}"></b>
 									</div>
-									<div class="col-xs-4" th:each="operator:${tour.operators}">
-										<a href="#"><strong>Công ty lữ hành</strong></a> <i th:text="${operator.companyNameViet}"></i>
+									<div class="col-xs-4" >
+										<a><strong>Công ty lữ hành</strong></a> <b th:each="operator:${tour.operators}" ><a  th:attr="href='/guide/'+${operator.id}" th:text="${operator.companyNameViet}"></a></b>
 									</div>
-									<div class="col-xs-4" th:each="location:${tour.locations}">
-										<a href="#"><strong>Địa điểm</strong></a> <i th:text="${location.locationName}"></i>
+									<div class="col-xs-4" >
+										<a href="#"><strong>Địa điểm</strong></a> <b th:each="location:${tour.locations}" th:text="${location.locationName}"></b>
 									</div>
 
 									<div class="col-xs-2">

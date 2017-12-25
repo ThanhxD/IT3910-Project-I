@@ -206,17 +206,17 @@
 							<div class="container-fluid find-guider">
 								<div class="row">
 
-									<div class="col-xs-4">
-										<a th:attr="href='/operator/'+${guide.id}"><strong th:text="${iterStat.count }+') Tên hướng dẫn viên '">  </strong></a> <i th:text="${guide.user.fullname}"></i>
+									<div class="col-xs-4" >
+										<a th:attr="href='/operator/'+${guide.id}"><b th:text="${iterStat.count }+') Tên hướng dẫn viên '">  </b></a> <a th:attr="href='/operator/'+${guide.id}" th:text="${guide.user.fullname}"></a>
 									</div>
 									<div class="col-xs-4" th:if="${guide.gender!=null}">
-										<a href="#"><strong>Giới tính   </strong></a> <i th:text="${guide.gender}"></i>
+										<a href="#"><b>Giới tính   </b></a> <b th:text="${guide.gender}"></b>
 									</div>
-									<div class="col-xs-4" th:each="lang:${guide.languages}">
-										<a href="#"><strong>Ngôn ngữ  </strong></a> <i th:text="${lang.language}"></i>
+									<div class="col-xs-4" >
+										<a href="#"><b>Ngôn ngữ  </b></a> <b th:each="lang:${guide.languages}" th:text="${lang.language}+'-'"></b>
 									</div>
-									<div class="col-xs-4" th:each="location:${guide.locations}">
-										<a href="#"><strong>Nơi hoạt động  </strong></a> <i th:text="${location.locationName}"></i>
+									<div class="col-xs-4" >
+										<a href="#"><b>Nơi hoạt động  </b></a> <b th:each="location:${guide.locations}" th:text="${location.locationName}+'-'"></b>
 									</div>
 									<div class="col-xs-2">
 										<button type="submit" class="btn btn-default">

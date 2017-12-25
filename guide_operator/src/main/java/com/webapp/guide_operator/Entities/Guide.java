@@ -61,6 +61,7 @@ public class Guide  implements Serializable {
 	@Length(max = 20)
     @Column(name = "gender", nullable = true)
     private String gender;
+	@OrderBy("id ASC")
 	@ManyToMany
 	@JoinTable(
 	            name = "guide_language_xref",
@@ -68,6 +69,7 @@ public class Guide  implements Serializable {
 	            inverseJoinColumns = @JoinColumn(name = "languageid")
 	    )
     private Set<Language> languages;
+	@OrderBy("id ASC")
 	@ManyToMany
 	@JoinTable(
 	            name = "guide_location_xref",

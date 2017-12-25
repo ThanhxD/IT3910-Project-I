@@ -1,7 +1,9 @@
 package com.webapp.guide_operator.Controller;
 
 import java.security.Principal;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,10 +19,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.webapp.guide_operator.Entities.Guide;
+import com.webapp.guide_operator.Entities.Language;
+import com.webapp.guide_operator.Entities.Location;
 import com.webapp.guide_operator.Entities.Tour;
 import com.webapp.guide_operator.Entities.User;
 import com.webapp.guide_operator.Repository.UserRepository;
 import com.webapp.guide_operator.Service.GuideService;
+import com.webapp.guide_operator.Service.LanguageService;
+import com.webapp.guide_operator.Service.LocationService;
 import com.webapp.guide_operator.Service.OperatorService;
 import com.webapp.guide_operator.Service.TourService;
 
@@ -36,13 +42,20 @@ public class GuideController {
 	private UserRepository userRepository;
 	@Autowired
 	private OperatorService operatorService;
+	@Autowired
+	private LocationService locationService;
+	@Autowired
+	private LanguageService languageService;
+
 	@PostMapping("/guide/changeinfo")
 	public String updateInfo(HttpServletRequest request, Model model) {
-		if(request.isUserInRole("ROLE_GUIDE")) {
+		if (request.isUserInRole("ROLE_GUIDE")) {
 			String guidename = request.getParameter("guidename");
 			String address = request.getParameter("address");
 			String phonenumber = request.getParameter("phonenumber");
 			String cardnumber = request.getParameter("cardnumber");
+			int countlocation = Integer.parseInt(request.getParameter("count-location"));
+			int countlanguage = Integer.parseInt(request.getParameter("count-language"));
 			Principal principal = request.getUserPrincipal();
 			User user = userRepository.findByUsername(principal.getName());
 			Guide guide = guideService.findByUserId(user.getId());
@@ -50,11 +63,38 @@ public class GuideController {
 			guide.getUser().setAddress(address);
 			guide.getUser().setPhonenumber(phonenumber);
 			guide.setCardnumber(cardnumber);
+			if (countlocation > 0) {
+				Set<Location> setl = new HashSet<>();
+				for (int i = 1; i <= countlocation; i++) {
+					try {
+						setl.add(locationService.findByLocationName(request.getParameter("location" + i)));
+					} catch (Exception e) {
+
+					}
+				}
+				guide.setLocations(setl);
+			}
+			if (countlanguage > 0) {
+				Set<Language> setl = new HashSet<>();
+				for (int i = 1; i <= countlanguage; i++) {
+					try {
+						setl.add(languageService.findByLanguage(request.getParameter("language" + i)));
+					} catch (Exception e) {
+
+					}
+				}
+				guide.setLanguages(setl);
+			}
+			if (request.getParameter("Male") != null) {
+				guide.setGender("male");
+			} else if (request.getParameter("FeMale") != null) {
+				guide.setGender("female");
+			}
+			guideService.save(guide);
 			model.addAttribute("guide", guide);
 			return "guide-info";
-			
-		}
-		else {
+
+		} else {
 			return "index";
 		}
 
@@ -162,39 +202,40 @@ public class GuideController {
 		model.addAttribute("nextpage", page + 1);
 		return "danhsachhuongdanvien";
 	}
+
 	@PostMapping("/guide/changepassword")
-	public String changePass(HttpServletRequest request,Model model) {
-		if(request.isUserInRole("ROLE_GUIDE")) {
+	public String changePass(HttpServletRequest request, Model model) {
+		if (request.isUserInRole("ROLE_GUIDE")) {
 			String oldpassword = request.getParameter("old-passwd");
 			String newpassword = request.getParameter("new-passwd");
 			Principal principal = request.getUserPrincipal();
 			User user = userRepository.findByUsername(principal.getName());
 			Guide guide = guideService.findByUserId(user.getId());
-			if(BCrypt.checkpw(oldpassword, user.getPassword())) {
+			if (BCrypt.checkpw(oldpassword, user.getPassword())) {
 				guide.getUser().setPassword(passwordEncoder.encode(newpassword));
-				model.addAttribute("status","Đổi password thành công");
-			}
-			else {
-				model.addAttribute("status","Đổi password thất bại do sai mật khẩu cũ");
+				model.addAttribute("status", "Đổi password thành công");
+			} else {
+				model.addAttribute("status", "Đổi password thất bại do sai mật khẩu cũ");
 			}
 			guideService.save(guide);
 			model.addAttribute("guide", guide);
 			return "guide-info";
-		}
-		else {
+		} else {
 			return "index";
 		}
 	}
+
 	@GetMapping("/guide/{operatorid}")
-	public String showOperatorInfo(@PathVariable("operatorid") int operatorid,HttpServletRequest request, Model model) {
-		if(request.isUserInRole("ROLE_GUIDE")) {
+	public String showOperatorInfo(@PathVariable("operatorid") int operatorid, HttpServletRequest request,
+			Model model) {
+		if (request.isUserInRole("ROLE_GUIDE")) {
 			Principal principal = request.getUserPrincipal();
 			User user = userRepository.findByUsername(principal.getName());
 			Guide guide = guideService.findByUserId(user.getId());
-			model.addAttribute("operator",operatorService.findOne(operatorid));
+			model.addAttribute("operator", operatorService.findOne(operatorid));
 			model.addAttribute("guide", guide);
 			return "showingoperator-info";
-		}
-		else return "index";
+		} else
+			return "index";
 	}
 }
